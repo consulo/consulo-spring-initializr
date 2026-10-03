@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<consulo-plugin url="https://github.com/consulo/consulo-spring-initializr">
+  <id>consulo.spring.initializr</id>
+  <name>Spring Initializr</name>
+  <description>Offline Spring Boot project generation using Spring Initializr.</description>
+  <category>Web/JavaEE Technologies</category>
+  <version>SNAPSHOT</version>
+  <vendor>consulo.io</vendor>
+
+  <depends>consulo.java</depends>
+  <depends>com.intellij.spring</depends>
+  <!-- importing the generated project, see maven-impl and gradle-impl -->
+  <depends optional="true">org.jetbrains.idea.maven</depends>
+  <depends optional="true">org.jetbrains.plugins.gradle</depends>
+
+  <tags>
+    <tag>software.framework</tag>
+  </tags>
+</consulo-plugin>

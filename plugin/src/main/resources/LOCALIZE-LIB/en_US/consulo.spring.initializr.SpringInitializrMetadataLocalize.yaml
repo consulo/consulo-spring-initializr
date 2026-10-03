@@ -1,0 +1,860 @@
+"boot.version.4.0.8.name":
+    text: '4.0.8'
+"boot.version.4.1.1.name":
+    text: '4.1.1'
+dependency.activemq.description:
+    text: 'Spring JMS support with Apache ActiveMQ ''Classic''.'
+dependency.activemq.name:
+    text: 'Spring for Apache ActiveMQ 5'
+dependency.actuator.description:
+    text: 'Supports built in (or custom) endpoints that let you monitor and manage your application - such as application health, metrics, sessions, etc.'
+dependency.actuator.name:
+    text: 'Spring Boot Actuator'
+dependency.artemis.description:
+    text: 'Spring JMS support with Apache ActiveMQ Artemis.'
+dependency.artemis.name:
+    text: 'Spring for Apache ActiveMQ Artemis'
+dependency.azure.active.directory.description:
+    text: 'Spring Security integration with Azure Active Directory for authentication.'
+dependency.azure.active.directory.name:
+    text: 'Azure Active Directory'
+dependency.azure.cosmos.db.description:
+    text: 'Fully managed NoSQL database service for modern app development, including Spring Data support.'
+dependency.azure.cosmos.db.name:
+    text: 'Azure Cosmos DB'
+dependency.azure.keyvault.description:
+    text: 'All key vault features are supported, e.g. manage application secrets and certificates.'
+dependency.azure.keyvault.name:
+    text: 'Azure Key Vault'
+dependency.azure.storage.description:
+    text: 'All Storage features are supported, e.g. blob, fileshare and queue.'
+dependency.azure.storage.name:
+    text: 'Azure Storage'
+dependency.azure.support.description:
+    text: 'Auto-configuration for Azure Services (Service Bus, Storage, Active Directory, Key Vault, and more).'
+dependency.azure.support.name:
+    text: 'Azure Support'
+dependency.batch.data.mongodb.description:
+    text: 'MongoDB support for Spring Batch applications.'
+dependency.batch.data.mongodb.name:
+    text: 'Spring Batch MongoDB'
+dependency.batch.description:
+    text: 'Batch applications with transactions, retry/skip and chunk based processing.'
+dependency.batch.jdbc.description:
+    text: 'JDBC support for Spring Batch applications.'
+dependency.batch.jdbc.name:
+    text: 'Spring Batch JDBC'
+dependency.batch.name:
+    text: 'Spring Batch'
+dependency.cache.description:
+    text: 'Provides cache-related operations, such as the ability to update the content of the cache, but does not provide the actual data store.'
+dependency.cache.name:
+    text: 'Spring Cache Abstraction'
+dependency.camel.description:
+    text: 'Apache Camel is an open source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data.'
+dependency.camel.name:
+    text: 'Apache Camel'
+dependency.cassandra.description:
+    text: 'Cassandra is an open source, distributed database management system designed to handle large amounts of data across many commodity servers.'
+dependency.cassandra.name:
+    text: 'Cassandra'
+dependency.cloud.bus.description:
+    text: 'Links nodes of a distributed system with a lightweight message broker which can used to broadcast state changes or other management instructions (requires a binder, e.g. Apache Kafka or RabbitMQ).'
+dependency.cloud.bus.name:
+    text: 'Cloud Bus'
+dependency.cloud.config.client.description:
+    text: 'Client that connects to a Spring Cloud Config Server to fetch the application''s configuration.'
+dependency.cloud.config.client.name:
+    text: 'Config Client'
+dependency.cloud.config.server.description:
+    text: 'Central management for configuration via Git, SVN, or HashiCorp Vault.'
+dependency.cloud.config.server.name:
+    text: 'Config Server'
+dependency.cloud.eureka.description:
+    text: 'A REST based service for locating services for the purpose of load balancing and failover of middle-tier servers.'
+dependency.cloud.eureka.name:
+    text: 'Eureka Discovery Client'
+dependency.cloud.eureka.server.description:
+    text: 'spring-cloud-netflix Eureka Server.'
+dependency.cloud.eureka.server.name:
+    text: 'Eureka Server'
+dependency.cloud.feign.description:
+    text: 'Declarative REST Client. OpenFeign creates a dynamic implementation of an interface decorated with JAX-RS or Spring MVC annotations.'
+dependency.cloud.feign.name:
+    text: 'OpenFeign'
+dependency.cloud.function.description:
+    text: 'Promotes the implementation of business logic via functions and supports a uniform programming model across serverless providers, as well as the ability to run standalone (locally or in a PaaS).'
+dependency.cloud.function.name:
+    text: 'Function'
+dependency.cloud.gateway.description:
+    text: 'Provides a simple, yet effective way to route to APIs in Servlet-based applications. Provides cross-cutting concerns to those APIs such as security, monitoring/metrics, and resiliency.'
+dependency.cloud.gateway.name:
+    text: 'Gateway'
+dependency.cloud.gateway.reactive.description:
+    text: 'Provides a simple, yet effective way to route to APIs in reactive applications. Provides cross-cutting concerns to those APIs such as security, monitoring/metrics, and resiliency.'
+dependency.cloud.gateway.reactive.name:
+    text: 'Reactive Gateway'
+dependency.cloud.gcp.description:
+    text: 'Contains auto-configuration support for every Google Cloud integration. Most of the auto-configuration code is only enabled if other dependencies are added to the classpath.'
+dependency.cloud.gcp.name:
+    text: 'Google Cloud Support'
+dependency.cloud.gcp.pubsub.description:
+    text: 'Adds the Google Cloud Support entry and all the required dependencies so that the Google Cloud Pub/Sub integration work out of the box.'
+dependency.cloud.gcp.pubsub.name:
+    text: 'Google Cloud Messaging'
+dependency.cloud.gcp.storage.description:
+    text: 'Adds the Google Cloud Support entry and all the required dependencies so that the Google Cloud Storage integration work out of the box.'
+dependency.cloud.gcp.storage.name:
+    text: 'Google Cloud Storage'
+dependency.cloud.loadbalancer.description:
+    text: 'Client-side load-balancing with Spring Cloud LoadBalancer.'
+dependency.cloud.loadbalancer.name:
+    text: 'Cloud LoadBalancer'
+dependency.cloud.resilience4j.description:
+    text: 'Spring Cloud Circuit breaker with Resilience4j as the underlying implementation.'
+dependency.cloud.resilience4j.name:
+    text: 'Resilience4J'
+dependency.cloud.starter.consul.config.description:
+    text: 'Enable and configure the common patterns inside your application and build large distributed systems with Hashicorp’s Consul. The patterns provided include Service Discovery, Distributed Configuration and Control Bus.'
+dependency.cloud.starter.consul.config.name:
+    text: 'Consul Configuration'
+dependency.cloud.starter.consul.discovery.description:
+    text: 'Service discovery with Hashicorp Consul.'
+dependency.cloud.starter.consul.discovery.name:
+    text: 'Consul Discovery'
+dependency.cloud.starter.description:
+    text: 'Non-specific Spring Cloud features, unrelated to external libraries or integrations (e.g. Bootstrap context and @RefreshScope).'
+dependency.cloud.starter.name:
+    text: 'Cloud Bootstrap'
+dependency.cloud.starter.vault.config.description:
+    text: 'Provides client-side support for externalized configuration in a distributed system. Using HashiCorp''s Vault you have a central place to manage external secret properties for applications across all environments.'
+dependency.cloud.starter.vault.config.name:
+    text: 'Vault Configuration'
+dependency.cloud.starter.zookeeper.config.description:
+    text: 'Enable and configure common patterns inside your application and build large distributed systems with Apache Zookeeper based components. The provided patterns include Service Discovery and Configuration.'
+dependency.cloud.starter.zookeeper.config.name:
+    text: 'Apache Zookeeper Configuration'
+dependency.cloud.starter.zookeeper.discovery.description:
+    text: 'Service discovery with Apache Zookeeper.'
+dependency.cloud.starter.zookeeper.discovery.name:
+    text: 'Apache Zookeeper Discovery'
+dependency.cloud.stream.description:
+    text: 'Framework for building highly scalable event-driven microservices connected with shared messaging systems (requires a binder, e.g. Apache Kafka, Apache Pulsar, RabbitMQ, or Solace PubSub+).'
+dependency.cloud.stream.name:
+    text: 'Cloud Stream'
+dependency.cloud.task.description:
+    text: 'Allows a user to develop and run short lived microservices using Spring Cloud. Run them locally, in the cloud, and on Spring Cloud Data Flow.'
+dependency.cloud.task.name:
+    text: 'Task'
+dependency.cloudfoundry.description:
+    text: 'Cloud Foundry provides a highly efficient, open source platform for cloud-native application development.'
+dependency.cloudfoundry.name:
+    text: 'Cloud Foundry'
+dependency.codecentric.spring.boot.admin.client.description:
+    text: 'Required for your application to register with a Codecentric''s Spring Boot Admin Server instance.'
+dependency.codecentric.spring.boot.admin.client.name:
+    text: 'codecentric''s Spring Boot Admin (Client)'
+dependency.codecentric.spring.boot.admin.server.description:
+    text: 'A community project to manage and monitor your Spring Boot applications. Provides a UI on top of the Spring Boot Actuator endpoints.'
+dependency.codecentric.spring.boot.admin.server.name:
+    text: 'codecentric''s Spring Boot Admin (Server)'
+dependency.configuration.processor.description:
+    text: 'Generate metadata for developers to offer contextual help and "code completion" when working with custom configuration keys (ex.application.properties/.yml files).'
+dependency.configuration.processor.name:
+    text: 'Spring Configuration Processor'
+dependency.couchbase.description:
+    text: 'Couchbase is an open-source, distributed, multi-model NoSQL document-oriented database that is optimized for interactive applications.'
+dependency.couchbase.name:
+    text: 'Couchbase'
+dependency.data.cassandra.description:
+    text: 'Spring Data support for Cassandra.'
+dependency.data.cassandra.name:
+    text: 'Spring Data for Apache Cassandra'
+dependency.data.cassandra.reactive.description:
+    text: 'Reactive Spring Data support for Cassandra.'
+dependency.data.cassandra.reactive.name:
+    text: 'Spring Data Reactive for Apache Cassandra'
+dependency.data.couchbase.description:
+    text: 'Spring Data support for Couchbase.'
+dependency.data.couchbase.name:
+    text: 'Spring Data Couchbase'
+dependency.data.couchbase.reactive.description:
+    text: 'Reactive Spring Data support for Couchbase.'
+dependency.data.couchbase.reactive.name:
+    text: 'Spring Data Reactive Couchbase'
+dependency.data.elasticsearch.description:
+    text: 'Spring Data support for Elasticsearch.'
+dependency.data.elasticsearch.name:
+    text: 'Spring Data Elasticsearch'
+dependency.data.jdbc.description:
+    text: 'Persist data in SQL stores with plain JDBC using Spring Data.'
+dependency.data.jdbc.name:
+    text: 'Spring Data JDBC'
+dependency.data.jpa.description:
+    text: 'Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate.'
+dependency.data.jpa.name:
+    text: 'Spring Data JPA'
+dependency.data.ldap.description:
+    text: 'Spring Data support for LDAP.'
+dependency.data.ldap.name:
+    text: 'Spring Data LDAP'
+dependency.data.mongodb.description:
+    text: 'Spring Data support for MongoDB.'
+dependency.data.mongodb.name:
+    text: 'Spring Data MongoDB'
+dependency.data.mongodb.reactive.description:
+    text: 'Reactive Spring Data support for MongoDB.'
+dependency.data.mongodb.reactive.name:
+    text: 'Spring Data Reactive MongoDB'
+dependency.data.neo4j.description:
+    text: 'Spring Data support for Neo4j.'
+dependency.data.neo4j.name:
+    text: 'Spring Data Neo4j'
+dependency.data.r2dbc.description:
+    text: 'Provides Reactive Relational Database Connectivity to persist data in SQL stores using Spring Data in reactive applications.'
+dependency.data.r2dbc.name:
+    text: 'Spring Data R2DBC'
+dependency.data.redis.description:
+    text: 'Advanced and thread-safe Java Redis client for synchronous, asynchronous, and reactive usage. Supports Cluster, Sentinel, Pipelining, Auto-Reconnect, Codecs and much more.'
+dependency.data.redis.name:
+    text: 'Spring Data Redis (Access+Driver)'
+dependency.data.redis.reactive.description:
+    text: 'Access Redis key-value data stores in a reactive fashion with Spring Data Redis.'
+dependency.data.redis.reactive.name:
+    text: 'Spring Data Reactive Redis'
+dependency.data.rest.description:
+    text: 'Exposing Spring Data repositories over REST via Spring Data REST.'
+dependency.data.rest.explorer.description:
+    text: 'Browsing Spring Data REST repositories in your browser.'
+dependency.data.rest.explorer.name:
+    text: 'Rest Repositories HAL Explorer'
+dependency.data.rest.name:
+    text: 'Rest Repositories'
+dependency.datadog.description:
+    text: 'Publish Micrometer metrics to Datadog, a dimensional time-series SaaS with built-in dashboarding and alerting.'
+dependency.datadog.name:
+    text: 'Datadog'
+dependency.datasource.micrometer.description:
+    text: 'Add Micrometer observability instrumentation for JDBC operations.'
+dependency.datasource.micrometer.name:
+    text: 'Datasource Micrometer'
+dependency.db2.description:
+    text: 'A JDBC driver that provides access to IBM DB2.'
+dependency.db2.name:
+    text: 'IBM DB2 Driver'
+dependency.derby.description:
+    text: 'An open source relational database implemented entirely in Java.'
+dependency.derby.name:
+    text: 'Apache Derby Database'
+dependency.devtools.description:
+    text: 'Provides fast application restarts, LiveReload, and configurations for enhanced development experience.'
+dependency.devtools.name:
+    text: 'Spring Boot DevTools'
+dependency.dgs.codegen.description:
+    text: 'Generate data types and type-safe APIs for querying GraphQL APIs by parsing schema files.'
+dependency.dgs.codegen.name:
+    text: 'GraphQL DGS Code Generation'
+dependency.distributed.tracing.description:
+    text: 'Enable span and trace IDs in logs.'
+dependency.distributed.tracing.name:
+    text: 'Distributed Tracing'
+dependency.docker.compose.description:
+    text: 'Provides docker compose support for enhanced development experience.'
+dependency.docker.compose.name:
+    text: 'Docker Compose Support'
+dependency.dynatrace.description:
+    text: 'Publish Micrometer metrics to Dynatrace, a platform featuring observability, AIOps, application security and analytics.'
+dependency.dynatrace.name:
+    text: 'Dynatrace'
+dependency.elasticsearch.description:
+    text: 'Elasticsearch is an open source, distributed, RESTful search and analytics engine.'
+dependency.elasticsearch.name:
+    text: 'Elasticsearch'
+dependency.flyway.description:
+    text: 'Version control for your database so you can migrate from any version (incl. an empty database) to the latest version of the schema.'
+dependency.flyway.name:
+    text: 'Flyway Migration'
+dependency.freemarker.description:
+    text: 'Java library to generate text output (HTML web pages, e-mails, configuration files, source code, etc.) based on templates and changing data.'
+dependency.freemarker.name:
+    text: 'Apache Freemarker'
+dependency.graphite.description:
+    text: 'Publish Micrometer metrics to Graphite, a hierarchical metrics system backed by a fixed-size database.'
+dependency.graphite.name:
+    text: 'Graphite'
+dependency.graphql.description:
+    text: 'Build GraphQL applications with Spring for GraphQL and GraphQL Java.'
+dependency.graphql.name:
+    text: 'Spring for GraphQL'
+dependency.groovy.templates.description:
+    text: 'Groovy templating engine.'
+dependency.groovy.templates.name:
+    text: 'Groovy Templates'
+dependency.group.ai.name:
+    text: 'AI'
+dependency.group.developer.tools.name:
+    text: 'Developer Tools'
+dependency.group.google.cloud.name:
+    text: 'Google Cloud'
+dependency.group.i.o.name:
+    text: 'I/O'
+dependency.group.messaging.name:
+    text: 'Messaging'
+dependency.group.microsoft.azure.name:
+    text: 'Microsoft Azure'
+dependency.group.nosql.name:
+    text: 'NoSQL'
+dependency.group.observability.name:
+    text: 'Observability'
+dependency.group.ops.name:
+    text: 'Ops'
+dependency.group.security.name:
+    text: 'Security'
+dependency.group.spring.cloud.circuit.breaker.name:
+    text: 'Spring Cloud Circuit Breaker'
+dependency.group.spring.cloud.config.name:
+    text: 'Spring Cloud Config'
+dependency.group.spring.cloud.discovery.name:
+    text: 'Spring Cloud Discovery'
+dependency.group.spring.cloud.messaging.name:
+    text: 'Spring Cloud Messaging'
+dependency.group.spring.cloud.name:
+    text: 'Spring Cloud'
+dependency.group.spring.cloud.routing.name:
+    text: 'Spring Cloud Routing'
+dependency.group.sql.name:
+    text: 'SQL'
+dependency.group.template.engines.name:
+    text: 'Template Engines'
+dependency.group.testing.name:
+    text: 'Testing'
+dependency.group.vmware.tanzu.application.service.name:
+    text: 'VMware Tanzu Application Service'
+dependency.group.vmware.tanzu.spring.sdk.name:
+    text: 'VMware Tanzu Spring SDK'
+dependency.group.web.name:
+    text: 'Web'
+dependency.h2.description:
+    text: 'Provides a fast in-memory database that supports JDBC API and R2DBC access, with a small (2mb) footprint. Supports embedded and server modes as well as a browser based console application.'
+dependency.h2.name:
+    text: 'H2 Database'
+dependency.hateoas.description:
+    text: 'Eases the creation of RESTful APIs that follow the HATEOAS principle when working with Spring / Spring MVC.'
+dependency.hateoas.name:
+    text: 'Spring HATEOAS'
+dependency.hazelcast.description:
+    text: 'Hazelcast is a distributed cache with in-memory compute and stream processing that accelerates applications with data caching, data integration, and distributed computing.'
+dependency.hazelcast.name:
+    text: 'Hazelcast'
+dependency.hsql.description:
+    text: 'Lightweight 100% Java SQL Database Engine.'
+dependency.hsql.name:
+    text: 'HyperSQL Database'
+dependency.htmx.description:
+    text: 'Build modern user interfaces with the simplicity and power of hypertext.'
+dependency.htmx.name:
+    text: 'htmx'
+dependency.influx.description:
+    text: 'Publish Micrometer metrics to InfluxDB, a dimensional time-series server that support real-time stream processing of data.'
+dependency.influx.name:
+    text: 'Influx'
+dependency.integration.description:
+    text: 'Adds support for Enterprise Integration Patterns. Enables lightweight messaging and supports integration with external systems via declarative adapters.'
+dependency.integration.name:
+    text: 'Spring Integration'
+dependency.jdbc.description:
+    text: 'Database Connectivity API that defines how a client may connect and query a database.'
+dependency.jdbc.name:
+    text: 'JDBC API'
+dependency.jersey.description:
+    text: 'Framework for developing RESTful Web Services in Java that provides support for JAX-RS APIs.'
+dependency.jersey.name:
+    text: 'Jersey'
+dependency.jobrunr.description:
+    text: 'Easily schedule and process background jobs using a distributed job scheduler with a built-in dashboard.'
+dependency.jobrunr.name:
+    text: 'JobRunr'
+dependency.jooq.description:
+    text: 'Generate Java code from your database and build type safe SQL queries through a fluent API.'
+dependency.jooq.name:
+    text: 'JOOQ Access Layer'
+dependency.jte.description:
+    text: 'Secure and lightweight template engine for Java and Kotlin.'
+dependency.jte.name:
+    text: 'jte'
+dependency.kafka.description:
+    text: 'Publish, subscribe, store, and process streams of records.'
+dependency.kafka.name:
+    text: 'Spring for Apache Kafka'
+dependency.kafka.streams.description:
+    text: 'Building stream processing applications with Apache Kafka Streams.'
+dependency.kafka.streams.name:
+    text: 'Spring for Apache Kafka Streams'
+dependency.ldap.description:
+    text: 'LDAP is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an IP network.'
+dependency.ldap.name:
+    text: 'LDAP'
+dependency.liquibase.description:
+    text: 'Liquibase database migration and source control library.'
+dependency.liquibase.name:
+    text: 'Liquibase Migration'
+dependency.lombok.description:
+    text: 'Java annotation library which helps to reduce boilerplate code.'
+dependency.lombok.name:
+    text: 'Lombok'
+dependency.mail.description:
+    text: 'Send email using Java Mail and Spring Framework''s JavaMailSender.'
+dependency.mail.name:
+    text: 'Java Mail Sender'
+dependency.mariadb.description:
+    text: 'MariaDB JDBC and R2DBC driver.'
+dependency.mariadb.name:
+    text: 'MariaDB Driver'
+dependency.mcp.security.description:
+    text: 'Provides security for Spring AI''s MCP server and client, and for the OAuth2 Authorization Server.'
+dependency.mcp.security.name:
+    text: 'Model Context Protocol Security [Experimental]'
+dependency.modulith.description:
+    text: 'Support for building modular monolithic applications.'
+dependency.modulith.name:
+    text: 'Spring Modulith'
+dependency.mongodb.description:
+    text: 'MongoDB is an open-source NoSQL document database that uses a JSON-like schema instead of traditional table-based relational data.'
+dependency.mongodb.name:
+    text: 'MongoDB'
+dependency.mustache.description:
+    text: 'Logic-less templates for both web and standalone environments. There are no if statements, else clauses, or for loops. Instead there are only tags.'
+dependency.mustache.name:
+    text: 'Mustache'
+dependency.mybatis.description:
+    text: 'Persistence framework with support for custom SQL, stored procedures and advanced mappings. MyBatis couples objects with stored procedures or SQL statements using a XML descriptor or annotations.'
+dependency.mybatis.name:
+    text: 'MyBatis Framework'
+dependency.mysql.description:
+    text: 'MySQL JDBC driver.'
+dependency.mysql.name:
+    text: 'MySQL Driver'
+dependency.native.description:
+    text: 'Support for compiling Spring applications to native executables using the GraalVM native-image compiler.'
+dependency.native.name:
+    text: 'GraalVM Native Support'
+dependency.neo4j.description:
+    text: 'Neo4j is an open-source NoSQL graph database that uses a rich data model of nodes connected by first class relationships, which is better suited for connected big data than traditional RDBMS approaches.'
+dependency.neo4j.name:
+    text: 'Neo4j'
+dependency.netflix.dgs.description:
+    text: 'Build GraphQL applications with Netflix DGS and Spring for GraphQL.'
+dependency.netflix.dgs.name:
+    text: 'Netflix DGS'
+dependency.new.relic.description:
+    text: 'Publish Micrometer metrics to New Relic, a SaaS offering with a full UI and a query language called NRQL.'
+dependency.new.relic.name:
+    text: 'New Relic'
+dependency.oauth2.authorization.server.description:
+    text: 'Spring Boot integration for Spring Authorization Server.'
+dependency.oauth2.authorization.server.name:
+    text: 'OAuth2 Authorization Server'
+dependency.oauth2.client.description:
+    text: 'Spring Boot integration for Spring Security''s OAuth2/OpenID Connect client features.'
+dependency.oauth2.client.name:
+    text: 'OAuth2 Client'
+dependency.oauth2.resource.server.description:
+    text: 'Spring Boot integration for Spring Security''s OAuth2 resource server features.'
+dependency.oauth2.resource.server.name:
+    text: 'OAuth2 Resource Server'
+dependency.okta.description:
+    text: 'Okta specific configuration for Spring Security/Spring Boot OAuth2 features. Enable your Spring Boot application to work with Okta via OAuth 2.0/OIDC.'
+dependency.okta.name:
+    text: 'Okta'
+dependency.opentelemetry.description:
+    text: 'Publish metrics and traces in OpenTelemetry''s OTLP format.'
+dependency.opentelemetry.name:
+    text: 'OpenTelemetry'
+dependency.oracle.description:
+    text: 'A JDBC driver that provides access to Oracle.'
+dependency.oracle.name:
+    text: 'Oracle Driver'
+dependency.otlp.metrics.description:
+    text: 'Publish Micrometer metrics to an OpenTelemetry Protocol (OTLP) capable backend.'
+dependency.otlp.metrics.name:
+    text: 'OTLP for metrics'
+dependency.postgresql.description:
+    text: 'A JDBC and R2DBC driver that allows Java programs to connect to a PostgreSQL database using standard, database independent Java code.'
+dependency.postgresql.name:
+    text: 'PostgreSQL Driver'
+dependency.prometheus.description:
+    text: 'Expose Micrometer metrics in Prometheus format, an in-memory dimensional time series database with a simple built-in UI, a custom query language, and math operations.'
+dependency.prometheus.name:
+    text: 'Prometheus'
+dependency.pulsar.description:
+    text: 'Build messaging applications with Apache Pulsar'
+dependency.pulsar.name:
+    text: 'Spring for Apache Pulsar'
+dependency.quartz.description:
+    text: 'Schedule jobs using Quartz.'
+dependency.quartz.name:
+    text: 'Quartz Scheduler'
+dependency.r2dbc.description:
+    text: 'Reactive Database Connectivity API that defines how a client may connect and query a database.'
+dependency.r2dbc.name:
+    text: 'R2DBC API'
+dependency.rabbitmq.description:
+    text: 'Gives your applications a common platform to send and receive messages, and your messages a safe place to live until received.'
+dependency.rabbitmq.name:
+    text: 'Spring for RabbitMQ'
+dependency.rabbitmq.streams.description:
+    text: 'Building stream processing applications with RabbitMQ.'
+dependency.rabbitmq.streams.name:
+    text: 'Spring for RabbitMQ Streams'
+dependency.restdocs.description:
+    text: 'Document RESTful services by combining hand-written with Asciidoctor and auto-generated snippets produced with Spring MVC Test.'
+dependency.restdocs.name:
+    text: 'Spring REST Docs'
+dependency.rsocket.description:
+    text: 'RSocket.io applications with Spring Messaging and Netty.'
+dependency.rsocket.name:
+    text: 'RSocket'
+dependency.sbom.cyclone.dx.description:
+    text: 'Creates a Software Bill of Materials in CycloneDX format.'
+dependency.sbom.cyclone.dx.name:
+    text: 'CycloneDX SBOM support'
+dependency.scs.config.client.description:
+    text: 'Config client on VMware Tanzu Application Service.'
+dependency.scs.config.client.name:
+    text: 'Config Client (TAS)'
+dependency.scs.service.registry.description:
+    text: 'Eureka service discovery client on VMware Tanzu Application Service.'
+dependency.scs.service.registry.name:
+    text: 'Service Registry (TAS)'
+dependency.security.description:
+    text: 'Highly customizable authentication and access-control framework for Spring applications.'
+dependency.security.name:
+    text: 'Spring Security'
+dependency.security.saml2.description:
+    text: 'Spring Boot integration for Spring Security''s SAML 2.0 features.'
+dependency.security.saml2.name:
+    text: 'SAML 2.0'
+dependency.sentry.description:
+    text: 'Application performance monitoring and error tracking that help software teams see clearer, solve quicker, and learn continuously.'
+dependency.sentry.name:
+    text: 'Sentry'
+dependency.session.data.mongodb.description:
+    text: 'Provides an API and a Spring Data MongoDB implementation for managing user session information.'
+dependency.session.data.mongodb.name:
+    text: 'Spring Session for Spring Data MongoDB'
+dependency.session.data.redis.description:
+    text: 'Provides an API and a Spring Data Redis implementation for managing user session information.'
+dependency.session.data.redis.name:
+    text: 'Spring Session for Spring Data Redis'
+dependency.session.hazelcast.description:
+    text: 'Provides an API and a Hazelcast implementation for managing user session information.'
+dependency.session.hazelcast.name:
+    text: 'Spring Session for Hazelcast'
+dependency.session.jdbc.description:
+    text: 'Provides an API and a JDBC implementation for managing user session information.'
+dependency.session.jdbc.name:
+    text: 'Spring Session for JDBC'
+dependency.solace.description:
+    text: 'Connect to a Solace PubSub+ Advanced Event Broker to publish, subscribe, request/reply and store/replay messages'
+dependency.solace.name:
+    text: 'Solace PubSub+'
+dependency.spring.ai.anthropic.description:
+    text: 'Spring AI support for Anthropic Claude AI models.'
+dependency.spring.ai.anthropic.name:
+    text: 'Anthropic Claude'
+dependency.spring.ai.bedrock.converse.description:
+    text: 'Spring AI support for Amazon Bedrock Converse. It provides a unified interface for conversational AI models with enhanced capabilities including function/tool calling, multimodal inputs, and streaming responses.'
+dependency.spring.ai.bedrock.converse.name:
+    text: 'Amazon Bedrock Converse'
+dependency.spring.ai.bedrock.description:
+    text: 'Spring AI support for Amazon Bedrock Cohere and Titan Embedding Models.'
+dependency.spring.ai.bedrock.name:
+    text: 'Amazon Bedrock'
+dependency.spring.ai.chat.memory.repository.cassandra.description:
+    text: 'Spring AI support for Cassandra based chat memory.'
+dependency.spring.ai.chat.memory.repository.cassandra.name:
+    text: 'Cassandra Chat Memory Repository'
+dependency.spring.ai.chat.memory.repository.in.memory.description:
+    text: 'Spring AI support for in-memory chat memory repository.'
+dependency.spring.ai.chat.memory.repository.in.memory.name:
+    text: 'In-memory Chat Memory Repository'
+dependency.spring.ai.chat.memory.repository.jdbc.description:
+    text: 'Spring AI support for JDBC based chat memory.'
+dependency.spring.ai.chat.memory.repository.jdbc.name:
+    text: 'JDBC Chat Memory Repository'
+dependency.spring.ai.chat.memory.repository.mongodb.description:
+    text: 'Spring AI support for MongoDB based chat memory.'
+dependency.spring.ai.chat.memory.repository.mongodb.name:
+    text: 'MongoDB Chat Memory Repository'
+dependency.spring.ai.chat.memory.repository.neo4j.description:
+    text: 'Spring AI support for Neo4j based chat memory.'
+dependency.spring.ai.chat.memory.repository.neo4j.name:
+    text: 'Neo4j Chat Memory Repository'
+dependency.spring.ai.chat.memory.repository.redis.description:
+    text: 'Spring AI support for Redis based chat memory.'
+dependency.spring.ai.chat.memory.repository.redis.name:
+    text: 'Redis Chat Memory Repository'
+dependency.spring.ai.deepseek.description:
+    text: 'Spring AI support for DeepSeek AI models.'
+dependency.spring.ai.deepseek.name:
+    text: 'DeepSeek'
+dependency.spring.ai.elevenlabs.description:
+    text: 'Spring AI support for ElevenLabs text-to-speech models.'
+dependency.spring.ai.elevenlabs.name:
+    text: 'ElevenLabs'
+dependency.spring.ai.google.genai.description:
+    text: 'Spring AI support for Google GenAI (Gemini) models.'
+dependency.spring.ai.google.genai.embedding.description:
+    text: 'Spring AI support for Google GenAI embedding models.'
+dependency.spring.ai.google.genai.embedding.name:
+    text: 'Google GenAI Embeddings'
+dependency.spring.ai.google.genai.name:
+    text: 'Google GenAI'
+dependency.spring.ai.jsoup.document.reader.description:
+    text: 'Spring AI HTML document reader using JSoup. It parses HTML documents and converts them into a list of Spring AI Document objects.'
+dependency.spring.ai.jsoup.document.reader.name:
+    text: 'JSoup Document Reader'
+dependency.spring.ai.markdown.document.reader.description:
+    text: 'Spring AI Markdown document reader. It allows to load Markdown documents, converting them into a list of Spring AI Document objects.'
+dependency.spring.ai.markdown.document.reader.name:
+    text: 'Markdown Document Reader'
+dependency.spring.ai.mcp.client.description:
+    text: 'Spring AI support for Model Context Protocol (MCP) clients.'
+dependency.spring.ai.mcp.client.name:
+    text: 'Model Context Protocol Client'
+dependency.spring.ai.mcp.server.description:
+    text: 'Spring AI support for Model Context Protocol (MCP) servers.'
+dependency.spring.ai.mcp.server.name:
+    text: 'Model Context Protocol Server'
+dependency.spring.ai.mistral.description:
+    text: 'Spring AI support for Mistral AI, the open and portable generative AI for devs and businesses.'
+dependency.spring.ai.mistral.name:
+    text: 'Mistral AI'
+dependency.spring.ai.ollama.description:
+    text: 'Spring AI support for Ollama. It allows you to run various Large Language Models (LLMs) locally and generate text from them.'
+dependency.spring.ai.ollama.name:
+    text: 'Ollama'
+dependency.spring.ai.openai.description:
+    text: 'Spring AI support for ChatGPT, the AI language model and DALL-E, the Image generation model from OpenAI.'
+dependency.spring.ai.openai.name:
+    text: 'OpenAI'
+dependency.spring.ai.pdf.document.reader.description:
+    text: 'Spring AI PDF document reader. It uses Apache PdfBox to extract text from PDF documents and converting them into a list of Spring AI Document objects.'
+dependency.spring.ai.pdf.document.reader.name:
+    text: 'PDF Document Reader'
+dependency.spring.ai.postgresml.description:
+    text: 'Spring AI support for the PostgresML text embeddings models.'
+dependency.spring.ai.postgresml.name:
+    text: 'PostgresML'
+dependency.spring.ai.stabilityai.description:
+    text: 'Spring AI support for Stability AI''s text to image generation model.'
+dependency.spring.ai.stabilityai.name:
+    text: 'Stability AI'
+dependency.spring.ai.tika.document.reader.description:
+    text: 'Spring AI Tika document reader. It uses Apache Tika to extract text from a variety of document formats, such as PDF, DOC/DOCX, PPT/PPTX, and HTML. The documents are converted into a list of Spring AI Document objects.'
+dependency.spring.ai.tika.document.reader.name:
+    text: 'Tika Document Reader'
+dependency.spring.ai.tool.search.advisor.description:
+    text: 'Spring AI Starter for the Tool Search Advisor, enabling dynamic tool discovery via a search index.'
+dependency.spring.ai.tool.search.advisor.name:
+    text: 'Tool Search Advisor'
+dependency.spring.ai.transformers.description:
+    text: 'Spring AI support for pre-trained transformer models, serialized into the Open Neural Network Exchange (ONNX) format.'
+dependency.spring.ai.transformers.name:
+    text: 'Transformers (ONNX) Embeddings'
+dependency.spring.ai.vectordb.aws.opensearch.description:
+    text: 'Spring AI vector database support for AWS OpenSearch Service.'
+dependency.spring.ai.vectordb.aws.opensearch.name:
+    text: 'AWS OpenSearch Vector Database'
+dependency.spring.ai.vectordb.azure.description:
+    text: 'Spring AI vector database support for Azure AI Search. It is an AI-powered information retrieval platform and part of Microsoft’s larger AI platform. Among other features, it allows users to query information using vector-based storage and retrieval.'
+dependency.spring.ai.vectordb.azure.name:
+    text: 'Azure AI Search'
+dependency.spring.ai.vectordb.bedrock.knowledgebase.description:
+    text: 'Spring AI vector database support for Amazon Bedrock Knowledge Base. It provides fully managed Retrieval-Augmented Generation (RAG) capabilities with enterprise-grade security and privacy.'
+dependency.spring.ai.vectordb.bedrock.knowledgebase.name:
+    text: 'Amazon Bedrock Knowledge Base'
+dependency.spring.ai.vectordb.cassandra.description:
+    text: 'Spring AI vector database support for Apache Cassandra.'
+dependency.spring.ai.vectordb.cassandra.name:
+    text: 'Apache Cassandra Vector Database'
+dependency.spring.ai.vectordb.chroma.description:
+    text: 'Spring AI vector database support for Chroma. It is an open-source embedding database and gives you the tools to store document embeddings, content, and metadata. It also allows to search through those embeddings, including metadata filtering.'
+dependency.spring.ai.vectordb.chroma.name:
+    text: 'Chroma Vector Database'
+dependency.spring.ai.vectordb.couchbase.description:
+    text: 'Spring AI vector database support for Couchbase.'
+dependency.spring.ai.vectordb.couchbase.name:
+    text: 'Couchbase Vector Database'
+dependency.spring.ai.vectordb.elasticsearch.description:
+    text: 'Spring AI vector database support for Elasticsearch.'
+dependency.spring.ai.vectordb.elasticsearch.name:
+    text: 'Elasticsearch Vector Database'
+dependency.spring.ai.vectordb.gemfire.description:
+    text: 'Spring AI vector database support for GemFire.'
+dependency.spring.ai.vectordb.gemfire.name:
+    text: 'GemFire Vector Database'
+dependency.spring.ai.vectordb.mariadb.description:
+    text: 'Spring AI support for MariaDB. MariaDB Vector Store support is part of MariaDB 11.7. It provides efficient vector similarity search capabilities using vector indexes, supporting both cosine similarity and Euclidean distance metrics.'
+dependency.spring.ai.vectordb.mariadb.name:
+    text: 'MariaDB Vector Database'
+dependency.spring.ai.vectordb.milvus.description:
+    text: 'Spring AI vector database support for Milvus. It is an open-source vector database that has garnered significant attention in the fields of data science and machine learning. One of its standout features lies in its robust support for vector indexing and querying.'
+dependency.spring.ai.vectordb.milvus.name:
+    text: 'Milvus Vector Database'
+dependency.spring.ai.vectordb.mongodb.atlas.description:
+    text: 'Spring AI vector database support for MongoDB Atlas. Is is a fully managed cloud database service that provides an easy way to deploy, operate, and scale a MongoDB database in the cloud.'
+dependency.spring.ai.vectordb.mongodb.atlas.name:
+    text: 'MongoDB Atlas Vector Database'
+dependency.spring.ai.vectordb.neo4j.description:
+    text: 'Spring AI vector database support for Neo4j''s Vector Search. It allows users to query vector embeddings from large datasets.'
+dependency.spring.ai.vectordb.neo4j.name:
+    text: 'Neo4j Vector Database'
+dependency.spring.ai.vectordb.opensearch.description:
+    text: 'Spring AI vector database support for OpenSearch.'
+dependency.spring.ai.vectordb.opensearch.name:
+    text: 'OpenSearch Vector Database'
+dependency.spring.ai.vectordb.oracle.description:
+    text: 'Spring AI vector database support for Oracle. Enables storing, indexing and searching vector embeddings in Oracle Database 23ai.'
+dependency.spring.ai.vectordb.oracle.name:
+    text: 'Oracle Vector Database'
+dependency.spring.ai.vectordb.pgvector.description:
+    text: 'Spring AI vector database support for PGvector. It is an open-source extension for PostgreSQL that enables storing and searching over machine learning-generated embeddings.'
+dependency.spring.ai.vectordb.pgvector.name:
+    text: 'PGvector Vector Database'
+dependency.spring.ai.vectordb.pinecone.description:
+    text: 'Spring AI vector database support for Pinecone. It is a popular cloud-based vector database and allows you to store and search vectors efficiently.'
+dependency.spring.ai.vectordb.pinecone.name:
+    text: 'Pinecone Vector Database'
+dependency.spring.ai.vectordb.qdrant.description:
+    text: 'Spring AI vector database support for Qdrant. It is an open-source, high-performance vector search engine/database.'
+dependency.spring.ai.vectordb.qdrant.name:
+    text: 'Qdrant Vector Database'
+dependency.spring.ai.vectordb.redis.description:
+    text: 'Spring AI vector database support for Redis Search and Query. It extends the core features of Redis OSS and allows you to use Redis as a vector database.'
+dependency.spring.ai.vectordb.redis.name:
+    text: 'Redis Search and Query Vector Database'
+dependency.spring.ai.vectordb.s3.description:
+    text: 'Spring AI vector database support for AWS S3. Store and retrieve vector embeddings using Amazon S3 object storage with efficient search capabilities.'
+dependency.spring.ai.vectordb.s3.name:
+    text: 'S3 Vector Database'
+dependency.spring.ai.vectordb.typesense.description:
+    text: 'Spring AI vector database support for Typesense.'
+dependency.spring.ai.vectordb.typesense.name:
+    text: 'Typesense Vector Database'
+dependency.spring.ai.vectordb.weaviate.description:
+    text: 'Spring AI vector database support for Weaviate, an open-source vector database. It allows you to store data objects and vector embeddings from your favorite ML-models and scale seamlessly into billions of data objects.'
+dependency.spring.ai.vectordb.weaviate.name:
+    text: 'Weaviate Vector Database'
+dependency.spring.ai.vertexai.embeddings.description:
+    text: 'Spring AI support for Google Vertex text and multimodal embedding models.'
+dependency.spring.ai.vertexai.embeddings.name:
+    text: 'Vertex AI Embeddings'
+dependency.spring.grpc.client.description:
+    text: 'Client support for gRPC, a high performance, open source universal RPC framework.'
+dependency.spring.grpc.client.name:
+    text: 'Spring gRPC Client'
+dependency.spring.grpc.server.description:
+    text: 'Server support for gRPC, a high performance, open source universal RPC framework.'
+dependency.spring.grpc.server.name:
+    text: 'Spring gRPC Server'
+dependency.spring.restclient.description:
+    text: 'Spring Boot integration for RestClient and RestTemplate to make HTTP requests.'
+dependency.spring.restclient.name:
+    text: 'HTTP Client'
+dependency.spring.security.webauthn.description:
+    text: 'Support for WebAuthn in Spring Security.'
+dependency.spring.security.webauthn.name:
+    text: 'WebAuthn for Spring Security'
+dependency.spring.shell.description:
+    text: 'Build command line applications with spring.'
+dependency.spring.shell.name:
+    text: 'Spring Shell'
+dependency.spring.webclient.description:
+    text: 'Spring Boot integration for WebClient to make reactive HTTP requests.'
+dependency.spring.webclient.name:
+    text: 'Reactive HTTP Client'
+dependency.springdoc.openapi.description:
+    text: 'Add OpenAPI / Swagger documentation to web-based Spring applications.'
+dependency.springdoc.openapi.name:
+    text: 'SpringDoc OpenAPI'
+dependency.sqlite.description:
+    text: 'JDBC driver for SQLite, a lightweight, embedded SQL database engine.'
+dependency.sqlite.name:
+    text: 'SQLite Driver'
+dependency.sqlserver.description:
+    text: 'A JDBC and R2DBC driver that provides access to Microsoft SQL Server and Azure SQL Database from any Java application.'
+dependency.sqlserver.name:
+    text: 'MS SQL Server Driver'
+dependency.tanzu.spring.sdk.description:
+    text: 'The Tanzu Spring SDK is a Spring Boot BOM with optional libraries for exposing observability and using OpenFeature based feature flags in Tanzu Platform.'
+dependency.tanzu.spring.sdk.name:
+    text: 'Tanzu Spring SDK [Enterprise]'
+dependency.testcontainers.description:
+    text: 'Provide lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.'
+dependency.testcontainers.name:
+    text: 'Testcontainers'
+dependency.thymeleaf.description:
+    text: 'A modern server-side Java template engine for both web and standalone environments. Allows HTML to be correctly displayed in browsers and as static prototypes.'
+dependency.thymeleaf.name:
+    text: 'Thymeleaf'
+dependency.timefold.solver.description:
+    text: 'AI solver to optimize operations and scheduling.'
+dependency.timefold.solver.name:
+    text: 'Timefold Solver'
+dependency.unboundid.ldap.description:
+    text: 'Provides a platform neutral way for running a LDAP server in unit tests.'
+dependency.unboundid.ldap.name:
+    text: 'Embedded LDAP Server'
+dependency.vaadin.description:
+    text: 'The full-stack web app platform for Spring. Build views fully in Java with Flow, or in React using Hilla.'
+dependency.vaadin.name:
+    text: 'Vaadin'
+dependency.validation.description:
+    text: 'Bean Validation with Hibernate validator.'
+dependency.validation.name:
+    text: 'Validation'
+dependency.web.description:
+    text: 'Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the default embedded container.'
+dependency.web.name:
+    text: 'Spring Web'
+dependency.web.services.description:
+    text: 'Facilitates contract-first SOAP development using Spring WS. Allows for the creation of flexible web services using one of the many ways to manipulate XML payloads.'
+dependency.web.services.name:
+    text: 'Spring Web Services'
+dependency.webflux.description:
+    text: 'Build reactive web applications with Spring WebFlux and Netty.'
+dependency.webflux.name:
+    text: 'Spring Reactive Web'
+dependency.websocket.description:
+    text: 'Build Servlet-based WebSocket applications with SockJS and STOMP.'
+dependency.websocket.name:
+    text: 'WebSocket'
+dependency.zipkin.description:
+    text: 'Enable and expose span and trace IDs to Zipkin.'
+dependency.zipkin.name:
+    text: 'Zipkin'
+"java.version.17.name":
+    text: '17'
+"java.version.21.name":
+    text: '21'
+"java.version.25.name":
+    text: '25'
+"java.version.27.name":
+    text: '27'
+language.groovy.name:
+    text: 'Groovy'
+language.java.name:
+    text: 'Java'
+language.kotlin.name:
+    text: 'Kotlin'
+packaging.jar.name:
+    text: 'Jar'
+packaging.war.name:
+    text: 'War'
+type.gradle.project.kotlin.name:
+    text: 'Gradle - Kotlin'
+type.gradle.project.name:
+    text: 'Gradle - Groovy'
+type.maven.project.name:
+    text: 'Maven'

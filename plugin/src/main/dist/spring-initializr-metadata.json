@@ -1,0 +1,3075 @@
+{
+  "bootVersions": [
+    {
+      "id": "4.1.1",
+      "nameId": "boot.version.4.1.1.name",
+      "default": true
+    },
+    {
+      "id": "4.0.8",
+      "nameId": "boot.version.4.0.8.name",
+      "default": false
+    }
+  ],
+  "javaVersions": [
+    {
+      "id": "27",
+      "nameId": "java.version.27.name",
+      "default": false
+    },
+    {
+      "id": "25",
+      "nameId": "java.version.25.name",
+      "default": false
+    },
+    {
+      "id": "21",
+      "nameId": "java.version.21.name",
+      "default": false
+    },
+    {
+      "id": "17",
+      "nameId": "java.version.17.name",
+      "default": true
+    }
+  ],
+  "languages": [
+    {
+      "id": "java",
+      "nameId": "language.java.name",
+      "default": true
+    },
+    {
+      "id": "kotlin",
+      "nameId": "language.kotlin.name",
+      "default": false
+    },
+    {
+      "id": "groovy",
+      "nameId": "language.groovy.name",
+      "default": false
+    }
+  ],
+  "packagings": [
+    {
+      "id": "jar",
+      "nameId": "packaging.jar.name",
+      "default": true
+    },
+    {
+      "id": "war",
+      "nameId": "packaging.war.name",
+      "default": false
+    }
+  ],
+  "types": [
+    {
+      "id": "gradle-project",
+      "nameId": "type.gradle.project.name",
+      "default": true,
+      "tags": {
+        "build": "gradle",
+        "dialect": "groovy",
+        "format": "project"
+      }
+    },
+    {
+      "id": "gradle-project-kotlin",
+      "nameId": "type.gradle.project.kotlin.name",
+      "default": false,
+      "tags": {
+        "build": "gradle",
+        "dialect": "kotlin",
+        "format": "project"
+      }
+    },
+    {
+      "id": "maven-project",
+      "nameId": "type.maven.project.name",
+      "default": false,
+      "tags": {
+        "build": "maven",
+        "format": "project"
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "nameId": "dependency.group.developer.tools.name",
+      "content": [
+        {
+          "id": "native",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot",
+          "scope": "compile",
+          "nameId": "dependency.native.name",
+          "descriptionId": "dependency.native.description"
+        },
+        {
+          "id": "dgs-codegen",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "com.netflix.graphql.dgs.codegen",
+          "artifactId": "graphql-dgs-codegen-gradle",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "8.3.0",
+              "compatibilityRange": "[4.1.1,4.1.1]"
+            },
+            {
+              "version": "8.3.0",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.dgs.codegen.name",
+          "descriptionId": "dependency.dgs.codegen.description"
+        },
+        {
+          "id": "devtools",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-devtools",
+          "scope": "runtime",
+          "nameId": "dependency.devtools.name",
+          "descriptionId": "dependency.devtools.description"
+        },
+        {
+          "id": "lombok",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.projectlombok",
+          "artifactId": "lombok",
+          "scope": "annotationProcessor",
+          "nameId": "dependency.lombok.name",
+          "descriptionId": "dependency.lombok.description"
+        },
+        {
+          "id": "configuration-processor",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-configuration-processor",
+          "scope": "annotationProcessor",
+          "nameId": "dependency.configuration.processor.name",
+          "descriptionId": "dependency.configuration.processor.description"
+        },
+        {
+          "id": "docker-compose",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-docker-compose",
+          "scope": "runtime",
+          "nameId": "dependency.docker.compose.name",
+          "descriptionId": "dependency.docker.compose.description"
+        },
+        {
+          "id": "modulith",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.modulith",
+          "artifactId": "spring-modulith-starter-core",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-modulith",
+          "nameId": "dependency.modulith.name",
+          "descriptionId": "dependency.modulith.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.web.name",
+      "content": [
+        {
+          "id": "web",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-webmvc",
+          "scope": "compile",
+          "nameId": "dependency.web.name",
+          "descriptionId": "dependency.web.description"
+        },
+        {
+          "id": "webflux",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-webflux",
+          "scope": "compile",
+          "nameId": "dependency.webflux.name",
+          "descriptionId": "dependency.webflux.description"
+        },
+        {
+          "id": "spring-restclient",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-restclient",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.spring.restclient.name",
+          "descriptionId": "dependency.spring.restclient.description"
+        },
+        {
+          "id": "spring-webclient",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-webclient",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.spring.webclient.name",
+          "descriptionId": "dependency.spring.webclient.description"
+        },
+        {
+          "id": "graphql",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-graphql",
+          "scope": "compile",
+          "nameId": "dependency.graphql.name",
+          "descriptionId": "dependency.graphql.description"
+        },
+        {
+          "id": "data-rest",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-rest",
+          "scope": "compile",
+          "nameId": "dependency.data.rest.name",
+          "descriptionId": "dependency.data.rest.description"
+        },
+        {
+          "id": "session-data-mongodb",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "org.mongodb",
+          "artifactId": "mongodb-spring-session",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "4.0.0",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.session.data.mongodb.name",
+          "descriptionId": "dependency.session.data.mongodb.description"
+        },
+        {
+          "id": "session-data-redis",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-session-data-redis",
+          "scope": "compile",
+          "nameId": "dependency.session.data.redis.name",
+          "descriptionId": "dependency.session.data.redis.description"
+        },
+        {
+          "id": "session-hazelcast",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.hazelcast.spring",
+          "artifactId": "hazelcast-spring-session",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "4.0.0",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.session.hazelcast.name",
+          "descriptionId": "dependency.session.hazelcast.description"
+        },
+        {
+          "id": "session-jdbc",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-session-jdbc",
+          "scope": "compile",
+          "nameId": "dependency.session.jdbc.name",
+          "descriptionId": "dependency.session.jdbc.description"
+        },
+        {
+          "id": "data-rest-explorer",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.data",
+          "artifactId": "spring-data-rest-hal-explorer",
+          "scope": "compile",
+          "nameId": "dependency.data.rest.explorer.name",
+          "descriptionId": "dependency.data.rest.explorer.description"
+        },
+        {
+          "id": "hateoas",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-hateoas",
+          "scope": "compile",
+          "nameId": "dependency.hateoas.name",
+          "descriptionId": "dependency.hateoas.description"
+        },
+        {
+          "id": "web-services",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-webservices",
+          "scope": "compile",
+          "nameId": "dependency.web.services.name",
+          "descriptionId": "dependency.web.services.description"
+        },
+        {
+          "id": "jersey",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-jersey",
+          "scope": "compile",
+          "nameId": "dependency.jersey.name",
+          "descriptionId": "dependency.jersey.description"
+        },
+        {
+          "id": "vaadin",
+          "compatibleBootVersions": [
+            "4.1.1"
+          ],
+          "groupId": "com.vaadin",
+          "artifactId": "vaadin-spring-boot-starter",
+          "compatibilityRange": "[4.1.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "bom": "vaadin",
+          "nameId": "dependency.vaadin.name",
+          "descriptionId": "dependency.vaadin.description"
+        },
+        {
+          "id": "netflix-dgs",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.netflix.graphql.dgs",
+          "artifactId": "graphql-dgs-spring-graphql-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "netflix-dgs",
+          "nameId": "dependency.netflix.dgs.name",
+          "descriptionId": "dependency.netflix.dgs.description"
+        },
+        {
+          "id": "htmx",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "io.github.wimdeblauwe",
+          "artifactId": "htmx-spring-boot",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "5.1.0",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.htmx.name",
+          "descriptionId": "dependency.htmx.description"
+        },
+        {
+          "id": "springdoc-openapi",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springdoc",
+          "artifactId": "springdoc-openapi-starter-webmvc-ui",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "3.1.0",
+              "compatibilityRange": "[4.1.1,4.1.1]"
+            },
+            {
+              "version": "3.1.0",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.springdoc.openapi.name",
+          "descriptionId": "dependency.springdoc.openapi.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.template.engines.name",
+      "content": [
+        {
+          "id": "thymeleaf",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-thymeleaf",
+          "scope": "compile",
+          "nameId": "dependency.thymeleaf.name",
+          "descriptionId": "dependency.thymeleaf.description"
+        },
+        {
+          "id": "freemarker",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-freemarker",
+          "scope": "compile",
+          "nameId": "dependency.freemarker.name",
+          "descriptionId": "dependency.freemarker.description"
+        },
+        {
+          "id": "mustache",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-mustache",
+          "scope": "compile",
+          "nameId": "dependency.mustache.name",
+          "descriptionId": "dependency.mustache.description"
+        },
+        {
+          "id": "groovy-templates",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-groovy-templates",
+          "scope": "compile",
+          "nameId": "dependency.groovy.templates.name",
+          "descriptionId": "dependency.groovy.templates.description"
+        },
+        {
+          "id": "jte",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "gg.jte",
+          "artifactId": "jte-spring-boot-starter-4",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "3.2.4",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.jte.name",
+          "descriptionId": "dependency.jte.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.security.name",
+      "content": [
+        {
+          "id": "security",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-security",
+          "scope": "compile",
+          "nameId": "dependency.security.name",
+          "descriptionId": "dependency.security.description"
+        },
+        {
+          "id": "oauth2-client",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-security-oauth2-client",
+          "scope": "compile",
+          "nameId": "dependency.oauth2.client.name",
+          "descriptionId": "dependency.oauth2.client.description"
+        },
+        {
+          "id": "oauth2-authorization-server",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-security-oauth2-authorization-server",
+          "scope": "compile",
+          "nameId": "dependency.oauth2.authorization.server.name",
+          "descriptionId": "dependency.oauth2.authorization.server.description"
+        },
+        {
+          "id": "oauth2-resource-server",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-security-oauth2-resource-server",
+          "scope": "compile",
+          "nameId": "dependency.oauth2.resource.server.name",
+          "descriptionId": "dependency.oauth2.resource.server.description"
+        },
+        {
+          "id": "security-saml2",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-security-saml2",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "repository": "shibboleth-releases",
+          "nameId": "dependency.security.saml2.name",
+          "descriptionId": "dependency.security.saml2.description"
+        },
+        {
+          "id": "spring-security-webauthn",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.security",
+          "artifactId": "spring-security-webauthn",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.spring.security.webauthn.name",
+          "descriptionId": "dependency.spring.security.webauthn.description"
+        },
+        {
+          "id": "ldap",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-ldap",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.ldap.name",
+          "descriptionId": "dependency.ldap.description"
+        },
+        {
+          "id": "data-ldap",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-ldap",
+          "scope": "compile",
+          "nameId": "dependency.data.ldap.name",
+          "descriptionId": "dependency.data.ldap.description"
+        },
+        {
+          "id": "okta",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "com.okta.spring",
+          "artifactId": "okta-spring-boot-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "3.1.0",
+              "compatibilityRange": "[4.1.1,4.1.1]"
+            },
+            {
+              "version": "3.1.0",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.okta.name",
+          "descriptionId": "dependency.okta.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.sql.name",
+      "content": [
+        {
+          "id": "jdbc",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-jdbc",
+          "scope": "compile",
+          "nameId": "dependency.jdbc.name",
+          "descriptionId": "dependency.jdbc.description"
+        },
+        {
+          "id": "r2dbc",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-r2dbc",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.r2dbc.name",
+          "descriptionId": "dependency.r2dbc.description"
+        },
+        {
+          "id": "data-jpa",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-jpa",
+          "scope": "compile",
+          "nameId": "dependency.data.jpa.name",
+          "descriptionId": "dependency.data.jpa.description"
+        },
+        {
+          "id": "data-jdbc",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-jdbc",
+          "scope": "compile",
+          "nameId": "dependency.data.jdbc.name",
+          "descriptionId": "dependency.data.jdbc.description"
+        },
+        {
+          "id": "data-r2dbc",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-r2dbc",
+          "scope": "compile",
+          "nameId": "dependency.data.r2dbc.name",
+          "descriptionId": "dependency.data.r2dbc.description"
+        },
+        {
+          "id": "mybatis",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "org.mybatis.spring.boot",
+          "artifactId": "mybatis-spring-boot-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "4.0.1",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.mybatis.name",
+          "descriptionId": "dependency.mybatis.description"
+        },
+        {
+          "id": "liquibase",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-liquibase",
+          "scope": "compile",
+          "nameId": "dependency.liquibase.name",
+          "descriptionId": "dependency.liquibase.description"
+        },
+        {
+          "id": "flyway",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-flyway",
+          "scope": "compile",
+          "nameId": "dependency.flyway.name",
+          "descriptionId": "dependency.flyway.description"
+        },
+        {
+          "id": "jooq",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-jooq",
+          "scope": "compile",
+          "nameId": "dependency.jooq.name",
+          "descriptionId": "dependency.jooq.description"
+        },
+        {
+          "id": "db2",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "com.ibm.db2",
+          "artifactId": "jcc",
+          "scope": "runtime",
+          "nameId": "dependency.db2.name",
+          "descriptionId": "dependency.db2.description"
+        },
+        {
+          "id": "derby",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.apache.derby",
+          "artifactId": "derby",
+          "scope": "runtime",
+          "nameId": "dependency.derby.name",
+          "descriptionId": "dependency.derby.description"
+        },
+        {
+          "id": "h2",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "com.h2database",
+          "artifactId": "h2",
+          "scope": "runtime",
+          "nameId": "dependency.h2.name",
+          "descriptionId": "dependency.h2.description"
+        },
+        {
+          "id": "hsql",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.hsqldb",
+          "artifactId": "hsqldb",
+          "scope": "runtime",
+          "nameId": "dependency.hsql.name",
+          "descriptionId": "dependency.hsql.description"
+        },
+        {
+          "id": "mariadb",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.mariadb.jdbc",
+          "artifactId": "mariadb-java-client",
+          "scope": "runtime",
+          "nameId": "dependency.mariadb.name",
+          "descriptionId": "dependency.mariadb.description"
+        },
+        {
+          "id": "sqlserver",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "com.microsoft.sqlserver",
+          "artifactId": "mssql-jdbc",
+          "scope": "runtime",
+          "nameId": "dependency.sqlserver.name",
+          "descriptionId": "dependency.sqlserver.description"
+        },
+        {
+          "id": "mysql",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "com.mysql",
+          "artifactId": "mysql-connector-j",
+          "scope": "runtime",
+          "nameId": "dependency.mysql.name",
+          "descriptionId": "dependency.mysql.description"
+        },
+        {
+          "id": "oracle",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "com.oracle.database.jdbc",
+          "artifactId": "ojdbc17",
+          "scope": "runtime",
+          "nameId": "dependency.oracle.name",
+          "descriptionId": "dependency.oracle.description"
+        },
+        {
+          "id": "postgresql",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.postgresql",
+          "artifactId": "postgresql",
+          "scope": "runtime",
+          "nameId": "dependency.postgresql.name",
+          "descriptionId": "dependency.postgresql.description"
+        },
+        {
+          "id": "sqlite",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.xerial",
+          "artifactId": "sqlite-jdbc",
+          "scope": "runtime",
+          "nameId": "dependency.sqlite.name",
+          "descriptionId": "dependency.sqlite.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.nosql.name",
+      "content": [
+        {
+          "id": "data-redis",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-redis",
+          "scope": "compile",
+          "nameId": "dependency.data.redis.name",
+          "descriptionId": "dependency.data.redis.description"
+        },
+        {
+          "id": "data-redis-reactive",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-redis-reactive",
+          "scope": "compile",
+          "nameId": "dependency.data.redis.reactive.name",
+          "descriptionId": "dependency.data.redis.reactive.description"
+        },
+        {
+          "id": "mongodb",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-mongodb",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.mongodb.name",
+          "descriptionId": "dependency.mongodb.description"
+        },
+        {
+          "id": "data-mongodb",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-mongodb",
+          "scope": "compile",
+          "nameId": "dependency.data.mongodb.name",
+          "descriptionId": "dependency.data.mongodb.description"
+        },
+        {
+          "id": "data-mongodb-reactive",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-mongodb-reactive",
+          "scope": "compile",
+          "nameId": "dependency.data.mongodb.reactive.name",
+          "descriptionId": "dependency.data.mongodb.reactive.description"
+        },
+        {
+          "id": "elasticsearch",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-elasticsearch",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.elasticsearch.name",
+          "descriptionId": "dependency.elasticsearch.description"
+        },
+        {
+          "id": "data-elasticsearch",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-elasticsearch",
+          "scope": "compile",
+          "nameId": "dependency.data.elasticsearch.name",
+          "descriptionId": "dependency.data.elasticsearch.description"
+        },
+        {
+          "id": "cassandra",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-cassandra",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.cassandra.name",
+          "descriptionId": "dependency.cassandra.description"
+        },
+        {
+          "id": "data-cassandra",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-cassandra",
+          "scope": "compile",
+          "nameId": "dependency.data.cassandra.name",
+          "descriptionId": "dependency.data.cassandra.description"
+        },
+        {
+          "id": "data-cassandra-reactive",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-cassandra-reactive",
+          "scope": "compile",
+          "nameId": "dependency.data.cassandra.reactive.name",
+          "descriptionId": "dependency.data.cassandra.reactive.description"
+        },
+        {
+          "id": "couchbase",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-couchbase",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.couchbase.name",
+          "descriptionId": "dependency.couchbase.description"
+        },
+        {
+          "id": "data-couchbase",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-couchbase",
+          "scope": "compile",
+          "nameId": "dependency.data.couchbase.name",
+          "descriptionId": "dependency.data.couchbase.description"
+        },
+        {
+          "id": "data-couchbase-reactive",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-couchbase-reactive",
+          "scope": "compile",
+          "nameId": "dependency.data.couchbase.reactive.name",
+          "descriptionId": "dependency.data.couchbase.reactive.description"
+        },
+        {
+          "id": "neo4j",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-neo4j",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.neo4j.name",
+          "descriptionId": "dependency.neo4j.description"
+        },
+        {
+          "id": "data-neo4j",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-neo4j",
+          "scope": "compile",
+          "nameId": "dependency.data.neo4j.name",
+          "descriptionId": "dependency.data.neo4j.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.messaging.name",
+      "content": [
+        {
+          "id": "integration",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-integration",
+          "scope": "compile",
+          "nameId": "dependency.integration.name",
+          "descriptionId": "dependency.integration.description"
+        },
+        {
+          "id": "rabbitmq",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-amqp",
+          "scope": "compile",
+          "nameId": "dependency.rabbitmq.name",
+          "descriptionId": "dependency.rabbitmq.description"
+        },
+        {
+          "id": "rabbitmq-streams",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.amqp",
+          "artifactId": "spring-rabbit-stream",
+          "scope": "compile",
+          "nameId": "dependency.rabbitmq.streams.name",
+          "descriptionId": "dependency.rabbitmq.streams.description"
+        },
+        {
+          "id": "kafka",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-kafka",
+          "scope": "compile",
+          "nameId": "dependency.kafka.name",
+          "descriptionId": "dependency.kafka.description"
+        },
+        {
+          "id": "kafka-streams",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.apache.kafka",
+          "artifactId": "kafka-streams",
+          "scope": "compile",
+          "nameId": "dependency.kafka.streams.name",
+          "descriptionId": "dependency.kafka.streams.description"
+        },
+        {
+          "id": "activemq",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-activemq",
+          "scope": "compile",
+          "nameId": "dependency.activemq.name",
+          "descriptionId": "dependency.activemq.description"
+        },
+        {
+          "id": "artemis",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-artemis",
+          "scope": "compile",
+          "nameId": "dependency.artemis.name",
+          "descriptionId": "dependency.artemis.description"
+        },
+        {
+          "id": "pulsar",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-pulsar",
+          "scope": "compile",
+          "nameId": "dependency.pulsar.name",
+          "descriptionId": "dependency.pulsar.description"
+        },
+        {
+          "id": "websocket",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-websocket",
+          "scope": "compile",
+          "nameId": "dependency.websocket.name",
+          "descriptionId": "dependency.websocket.description"
+        },
+        {
+          "id": "rsocket",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-rsocket",
+          "scope": "compile",
+          "nameId": "dependency.rsocket.name",
+          "descriptionId": "dependency.rsocket.description"
+        },
+        {
+          "id": "camel",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.apache.camel.springboot",
+          "artifactId": "camel-spring-boot-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "4.22.0",
+              "compatibilityRange": "[4.1.1,4.1.1]"
+            },
+            {
+              "version": "4.22.0",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.camel.name",
+          "descriptionId": "dependency.camel.description"
+        },
+        {
+          "id": "solace",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.solace.spring.boot",
+          "artifactId": "solace-jms-spring-boot-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "solace-spring-boot",
+          "nameId": "dependency.solace.name",
+          "descriptionId": "dependency.solace.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.i.o.name",
+      "content": [
+        {
+          "id": "batch",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-batch",
+          "scope": "compile",
+          "nameId": "dependency.batch.name",
+          "descriptionId": "dependency.batch.description"
+        },
+        {
+          "id": "batch-jdbc",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-batch-jdbc",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.batch.jdbc.name",
+          "descriptionId": "dependency.batch.jdbc.description"
+        },
+        {
+          "id": "batch-data-mongodb",
+          "compatibleBootVersions": [
+            "4.1.1"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-batch-data-mongodb",
+          "compatibilityRange": "4.1.0.M3",
+          "scope": "compile",
+          "nameId": "dependency.batch.data.mongodb.name",
+          "descriptionId": "dependency.batch.data.mongodb.description"
+        },
+        {
+          "id": "hazelcast",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-hazelcast",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.hazelcast.name",
+          "descriptionId": "dependency.hazelcast.description"
+        },
+        {
+          "id": "validation",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-validation",
+          "scope": "compile",
+          "nameId": "dependency.validation.name",
+          "descriptionId": "dependency.validation.description"
+        },
+        {
+          "id": "mail",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-mail",
+          "scope": "compile",
+          "nameId": "dependency.mail.name",
+          "descriptionId": "dependency.mail.description"
+        },
+        {
+          "id": "quartz",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-quartz",
+          "scope": "compile",
+          "nameId": "dependency.quartz.name",
+          "descriptionId": "dependency.quartz.description"
+        },
+        {
+          "id": "jobrunr",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.jobrunr",
+          "artifactId": "jobrunr-spring-boot-4-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "9.0.0",
+              "compatibilityRange": "[4.1.1,4.1.1]"
+            },
+            {
+              "version": "9.0.0",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.jobrunr.name",
+          "descriptionId": "dependency.jobrunr.description"
+        },
+        {
+          "id": "cache",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-cache",
+          "scope": "compile",
+          "nameId": "dependency.cache.name",
+          "descriptionId": "dependency.cache.description"
+        },
+        {
+          "id": "spring-shell",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.shell",
+          "artifactId": "spring-shell-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "bom": "spring-shell",
+          "nameId": "dependency.spring.shell.name",
+          "descriptionId": "dependency.spring.shell.description"
+        },
+        {
+          "id": "spring-grpc-server",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-grpc-server",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "mappings": [
+            {
+              "groupId": "org.springframework.grpc",
+              "artifactId": "spring-grpc-server-spring-boot-starter",
+              "bom": "spring-grpc",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.spring.grpc.server.name",
+          "descriptionId": "dependency.spring.grpc.server.description"
+        },
+        {
+          "id": "spring-grpc-client",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-grpc-client",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "mappings": [
+            {
+              "groupId": "org.springframework.grpc",
+              "artifactId": "spring-grpc-client-spring-boot-starter",
+              "bom": "spring-grpc",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.spring.grpc.client.name",
+          "descriptionId": "dependency.spring.grpc.client.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.ops.name",
+      "content": [
+        {
+          "id": "actuator",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-actuator",
+          "scope": "compile",
+          "nameId": "dependency.actuator.name",
+          "descriptionId": "dependency.actuator.description"
+        },
+        {
+          "id": "sbom-cyclone-dx",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot",
+          "scope": "compile",
+          "nameId": "dependency.sbom.cyclone.dx.name",
+          "descriptionId": "dependency.sbom.cyclone.dx.description"
+        },
+        {
+          "id": "codecentric-spring-boot-admin-client",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "de.codecentric",
+          "artifactId": "spring-boot-admin-starter-client",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "bom": "codecentric-spring-boot-admin",
+          "nameId": "dependency.codecentric.spring.boot.admin.client.name",
+          "descriptionId": "dependency.codecentric.spring.boot.admin.client.description"
+        },
+        {
+          "id": "codecentric-spring-boot-admin-server",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "de.codecentric",
+          "artifactId": "spring-boot-admin-starter-server",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "bom": "codecentric-spring-boot-admin",
+          "nameId": "dependency.codecentric.spring.boot.admin.server.name",
+          "descriptionId": "dependency.codecentric.spring.boot.admin.server.description"
+        },
+        {
+          "id": "sentry",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "io.sentry",
+          "artifactId": "sentry-spring-boot-4-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "sentry",
+          "nameId": "dependency.sentry.name",
+          "descriptionId": "dependency.sentry.description"
+        },
+        {
+          "id": "cloudfoundry",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-cloudfoundry",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.cloudfoundry.name",
+          "descriptionId": "dependency.cloudfoundry.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.observability.name",
+      "content": [
+        {
+          "id": "datadog",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.micrometer",
+          "artifactId": "micrometer-registry-datadog",
+          "scope": "runtime",
+          "nameId": "dependency.datadog.name",
+          "descriptionId": "dependency.datadog.description"
+        },
+        {
+          "id": "dynatrace",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.micrometer",
+          "artifactId": "micrometer-registry-dynatrace",
+          "scope": "runtime",
+          "nameId": "dependency.dynatrace.name",
+          "descriptionId": "dependency.dynatrace.description"
+        },
+        {
+          "id": "influx",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.micrometer",
+          "artifactId": "micrometer-registry-influx",
+          "scope": "runtime",
+          "nameId": "dependency.influx.name",
+          "descriptionId": "dependency.influx.description"
+        },
+        {
+          "id": "graphite",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.micrometer",
+          "artifactId": "micrometer-registry-graphite",
+          "scope": "runtime",
+          "nameId": "dependency.graphite.name",
+          "descriptionId": "dependency.graphite.description"
+        },
+        {
+          "id": "new-relic",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.micrometer",
+          "artifactId": "micrometer-registry-new-relic",
+          "scope": "runtime",
+          "nameId": "dependency.new.relic.name",
+          "descriptionId": "dependency.new.relic.description"
+        },
+        {
+          "id": "otlp-metrics",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.micrometer",
+          "artifactId": "micrometer-registry-otlp",
+          "scope": "runtime",
+          "nameId": "dependency.otlp.metrics.name",
+          "descriptionId": "dependency.otlp.metrics.description"
+        },
+        {
+          "id": "prometheus",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.micrometer",
+          "artifactId": "micrometer-registry-prometheus",
+          "scope": "runtime",
+          "nameId": "dependency.prometheus.name",
+          "descriptionId": "dependency.prometheus.description"
+        },
+        {
+          "id": "datasource-micrometer",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "net.ttddyy.observation",
+          "artifactId": "datasource-micrometer-spring-boot",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "datasource-micrometer",
+          "nameId": "dependency.datasource.micrometer.name",
+          "descriptionId": "dependency.datasource.micrometer.description"
+        },
+        {
+          "id": "distributed-tracing",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.micrometer",
+          "artifactId": "micrometer-tracing-bridge-brave",
+          "scope": "compile",
+          "nameId": "dependency.distributed.tracing.name",
+          "descriptionId": "dependency.distributed.tracing.description"
+        },
+        {
+          "id": "opentelemetry",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-opentelemetry",
+          "compatibilityRange": "4.0.0.RELEASE",
+          "scope": "compile",
+          "nameId": "dependency.opentelemetry.name",
+          "descriptionId": "dependency.opentelemetry.description"
+        },
+        {
+          "id": "zipkin",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-zipkin",
+          "scope": "compile",
+          "nameId": "dependency.zipkin.name",
+          "descriptionId": "dependency.zipkin.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.testing.name",
+      "content": [
+        {
+          "id": "restdocs",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.restdocs",
+          "artifactId": "spring-restdocs-mockmvc",
+          "scope": "test",
+          "nameId": "dependency.restdocs.name",
+          "descriptionId": "dependency.restdocs.description"
+        },
+        {
+          "id": "testcontainers",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.testcontainers",
+          "artifactId": "testcontainers-junit-jupiter",
+          "scope": "test",
+          "nameId": "dependency.testcontainers.name",
+          "descriptionId": "dependency.testcontainers.description"
+        },
+        {
+          "id": "unboundid-ldap",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "com.unboundid",
+          "artifactId": "unboundid-ldapsdk",
+          "scope": "test",
+          "nameId": "dependency.unboundid.ldap.name",
+          "descriptionId": "dependency.unboundid.ldap.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.spring.cloud.name",
+      "content": [
+        {
+          "id": "cloud-starter",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.starter.name",
+          "descriptionId": "dependency.cloud.starter.description"
+        },
+        {
+          "id": "cloud-function",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-function-context",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.function.name",
+          "descriptionId": "dependency.cloud.function.description"
+        },
+        {
+          "id": "cloud-task",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-task",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.task.name",
+          "descriptionId": "dependency.cloud.task.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.spring.cloud.config.name",
+      "content": [
+        {
+          "id": "cloud-config-client",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-config",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.config.client.name",
+          "descriptionId": "dependency.cloud.config.client.description"
+        },
+        {
+          "id": "cloud-config-server",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-config-server",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.config.server.name",
+          "descriptionId": "dependency.cloud.config.server.description"
+        },
+        {
+          "id": "cloud-starter-vault-config",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-vault-config",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.starter.vault.config.name",
+          "descriptionId": "dependency.cloud.starter.vault.config.description"
+        },
+        {
+          "id": "cloud-starter-zookeeper-config",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-zookeeper-config",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.starter.zookeeper.config.name",
+          "descriptionId": "dependency.cloud.starter.zookeeper.config.description"
+        },
+        {
+          "id": "cloud-starter-consul-config",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-consul-config",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.starter.consul.config.name",
+          "descriptionId": "dependency.cloud.starter.consul.config.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.spring.cloud.discovery.name",
+      "content": [
+        {
+          "id": "cloud-eureka",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-netflix-eureka-client",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.eureka.name",
+          "descriptionId": "dependency.cloud.eureka.description"
+        },
+        {
+          "id": "cloud-eureka-server",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-netflix-eureka-server",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.eureka.server.name",
+          "descriptionId": "dependency.cloud.eureka.server.description"
+        },
+        {
+          "id": "cloud-starter-zookeeper-discovery",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-zookeeper-discovery",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.starter.zookeeper.discovery.name",
+          "descriptionId": "dependency.cloud.starter.zookeeper.discovery.description"
+        },
+        {
+          "id": "cloud-starter-consul-discovery",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-consul-discovery",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.starter.consul.discovery.name",
+          "descriptionId": "dependency.cloud.starter.consul.discovery.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.spring.cloud.routing.name",
+      "content": [
+        {
+          "id": "cloud-gateway",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-gateway-server-webmvc",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.gateway.name",
+          "descriptionId": "dependency.cloud.gateway.description"
+        },
+        {
+          "id": "cloud-gateway-reactive",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-gateway-server-webflux",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.gateway.reactive.name",
+          "descriptionId": "dependency.cloud.gateway.reactive.description"
+        },
+        {
+          "id": "cloud-feign",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-openfeign",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.feign.name",
+          "descriptionId": "dependency.cloud.feign.description"
+        },
+        {
+          "id": "cloud-loadbalancer",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-loadbalancer",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.loadbalancer.name",
+          "descriptionId": "dependency.cloud.loadbalancer.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.spring.cloud.circuit.breaker.name",
+      "content": [
+        {
+          "id": "cloud-resilience4j",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-starter-circuitbreaker-resilience4j",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.resilience4j.name",
+          "descriptionId": "dependency.cloud.resilience4j.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.spring.cloud.messaging.name",
+      "content": [
+        {
+          "id": "cloud-bus",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-bus",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.bus.name",
+          "descriptionId": "dependency.cloud.bus.description"
+        },
+        {
+          "id": "cloud-stream",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.cloud",
+          "artifactId": "spring-cloud-stream",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud",
+          "nameId": "dependency.cloud.stream.name",
+          "descriptionId": "dependency.cloud.stream.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.vmware.tanzu.application.service.name",
+      "content": [
+        {
+          "id": "scs-config-client",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.pivotal.spring.cloud",
+          "artifactId": "spring-cloud-services-starter-config-client",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-services",
+          "nameId": "dependency.scs.config.client.name",
+          "descriptionId": "dependency.scs.config.client.description"
+        },
+        {
+          "id": "scs-service-registry",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "io.pivotal.spring.cloud",
+          "artifactId": "spring-cloud-services-starter-service-registry",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-services",
+          "nameId": "dependency.scs.service.registry.name",
+          "descriptionId": "dependency.scs.service.registry.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.vmware.tanzu.spring.sdk.name",
+      "content": [
+        {
+          "id": "tanzu-spring-sdk",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.vmware.tanzu.spring",
+          "artifactId": "tanzu-spring-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "tanzu-spring-sdk",
+          "nameId": "dependency.tanzu.spring.sdk.name",
+          "descriptionId": "dependency.tanzu.spring.sdk.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.microsoft.azure.name",
+      "content": [
+        {
+          "id": "azure-support",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.azure.spring",
+          "artifactId": "spring-cloud-azure-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-azure",
+          "nameId": "dependency.azure.support.name",
+          "descriptionId": "dependency.azure.support.description"
+        },
+        {
+          "id": "azure-active-directory",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.azure.spring",
+          "artifactId": "spring-cloud-azure-starter-active-directory",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-azure",
+          "nameId": "dependency.azure.active.directory.name",
+          "descriptionId": "dependency.azure.active.directory.description"
+        },
+        {
+          "id": "azure-cosmos-db",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.azure.spring",
+          "artifactId": "spring-cloud-azure-starter-data-cosmos",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-azure",
+          "nameId": "dependency.azure.cosmos.db.name",
+          "descriptionId": "dependency.azure.cosmos.db.description"
+        },
+        {
+          "id": "azure-keyvault",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.azure.spring",
+          "artifactId": "spring-cloud-azure-starter-keyvault",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-azure",
+          "nameId": "dependency.azure.keyvault.name",
+          "descriptionId": "dependency.azure.keyvault.description"
+        },
+        {
+          "id": "azure-storage",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.azure.spring",
+          "artifactId": "spring-cloud-azure-starter-storage",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-azure",
+          "nameId": "dependency.azure.storage.name",
+          "descriptionId": "dependency.azure.storage.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.google.cloud.name",
+      "content": [
+        {
+          "id": "cloud-gcp",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.google.cloud",
+          "artifactId": "spring-cloud-gcp-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-gcp",
+          "nameId": "dependency.cloud.gcp.name",
+          "descriptionId": "dependency.cloud.gcp.description"
+        },
+        {
+          "id": "cloud-gcp-pubsub",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.google.cloud",
+          "artifactId": "spring-cloud-gcp-starter-pubsub",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-gcp",
+          "nameId": "dependency.cloud.gcp.pubsub.name",
+          "descriptionId": "dependency.cloud.gcp.pubsub.description"
+        },
+        {
+          "id": "cloud-gcp-storage",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "com.google.cloud",
+          "artifactId": "spring-cloud-gcp-starter-storage",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "spring-cloud-gcp",
+          "nameId": "dependency.cloud.gcp.storage.name",
+          "descriptionId": "dependency.cloud.gcp.storage.description"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.ai.name",
+      "content": [
+        {
+          "id": "spring-ai-anthropic",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-anthropic",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.anthropic.name",
+          "descriptionId": "dependency.spring.ai.anthropic.description"
+        },
+        {
+          "id": "spring-ai-vectordb-azure",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-azure",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.azure.name",
+          "descriptionId": "dependency.spring.ai.vectordb.azure.description"
+        },
+        {
+          "id": "spring-ai-bedrock",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-bedrock",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.bedrock.name",
+          "descriptionId": "dependency.spring.ai.bedrock.description"
+        },
+        {
+          "id": "spring-ai-bedrock-converse",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-bedrock-converse",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.bedrock.converse.name",
+          "descriptionId": "dependency.spring.ai.bedrock.converse.description"
+        },
+        {
+          "id": "spring-ai-vectordb-bedrock-knowledgebase",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-bedrock-knowledgebase",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.bedrock.knowledgebase.name",
+          "descriptionId": "dependency.spring.ai.vectordb.bedrock.knowledgebase.description"
+        },
+        {
+          "id": "spring-ai-deepseek",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-deepseek",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.deepseek.name",
+          "descriptionId": "dependency.spring.ai.deepseek.description"
+        },
+        {
+          "id": "spring-ai-elevenlabs",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-elevenlabs",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.elevenlabs.name",
+          "descriptionId": "dependency.spring.ai.elevenlabs.description"
+        },
+        {
+          "id": "spring-ai-google-genai",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-google-genai",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.google.genai.name",
+          "descriptionId": "dependency.spring.ai.google.genai.description"
+        },
+        {
+          "id": "spring-ai-google-genai-embedding",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-google-genai-embedding",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.google.genai.embedding.name",
+          "descriptionId": "dependency.spring.ai.google.genai.embedding.description"
+        },
+        {
+          "id": "spring-ai-vectordb-cassandra",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-cassandra",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.cassandra.name",
+          "descriptionId": "dependency.spring.ai.vectordb.cassandra.description"
+        },
+        {
+          "id": "spring-ai-vectordb-chroma",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-chroma",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.chroma.name",
+          "descriptionId": "dependency.spring.ai.vectordb.chroma.description"
+        },
+        {
+          "id": "spring-ai-vectordb-couchbase",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-couchbase",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.couchbase.name",
+          "descriptionId": "dependency.spring.ai.vectordb.couchbase.description"
+        },
+        {
+          "id": "spring-ai-vectordb-elasticsearch",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-elasticsearch",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.elasticsearch.name",
+          "descriptionId": "dependency.spring.ai.vectordb.elasticsearch.description"
+        },
+        {
+          "id": "spring-ai-vectordb-gemfire",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-gemfire",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.gemfire.name",
+          "descriptionId": "dependency.spring.ai.vectordb.gemfire.description"
+        },
+        {
+          "id": "spring-ai-mcp-server",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-mcp-server",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.mcp.server.name",
+          "descriptionId": "dependency.spring.ai.mcp.server.description"
+        },
+        {
+          "id": "spring-ai-mcp-client",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-mcp-client",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.mcp.client.name",
+          "descriptionId": "dependency.spring.ai.mcp.client.description"
+        },
+        {
+          "id": "spring-ai-tool-search-advisor",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-tool-search-advisor",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.tool.search.advisor.name",
+          "descriptionId": "dependency.spring.ai.tool.search.advisor.description"
+        },
+        {
+          "id": "mcp-security",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springaicommunity",
+          "artifactId": "mcp-server-security",
+          "compatibilityRange": "[4.0.0.RELEASE,4.2.0.M1)",
+          "scope": "compile",
+          "mappings": [
+            {
+              "version": "0.1.14",
+              "compatibilityRange": "[4.1.1,4.1.1]"
+            },
+            {
+              "version": "0.1.14",
+              "compatibilityRange": "[4.0.8,4.0.8]"
+            }
+          ],
+          "nameId": "dependency.mcp.security.name",
+          "descriptionId": "dependency.mcp.security.description"
+        },
+        {
+          "id": "spring-ai-vectordb-milvus",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-milvus",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.milvus.name",
+          "descriptionId": "dependency.spring.ai.vectordb.milvus.description"
+        },
+        {
+          "id": "spring-ai-mistral",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-mistral-ai",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.mistral.name",
+          "descriptionId": "dependency.spring.ai.mistral.description"
+        },
+        {
+          "id": "spring-ai-vectordb-mongodb-atlas",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-mongodb-atlas",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.mongodb.atlas.name",
+          "descriptionId": "dependency.spring.ai.vectordb.mongodb.atlas.description"
+        },
+        {
+          "id": "spring-ai-vectordb-neo4j",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-neo4j",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.neo4j.name",
+          "descriptionId": "dependency.spring.ai.vectordb.neo4j.description"
+        },
+        {
+          "id": "spring-ai-vectordb-opensearch",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-opensearch",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.opensearch.name",
+          "descriptionId": "dependency.spring.ai.vectordb.opensearch.description"
+        },
+        {
+          "id": "spring-ai-vectordb-aws-opensearch",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-aws-opensearch",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.aws.opensearch.name",
+          "descriptionId": "dependency.spring.ai.vectordb.aws.opensearch.description"
+        },
+        {
+          "id": "spring-ai-ollama",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-ollama",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.ollama.name",
+          "descriptionId": "dependency.spring.ai.ollama.description"
+        },
+        {
+          "id": "spring-ai-openai",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-openai",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.openai.name",
+          "descriptionId": "dependency.spring.ai.openai.description"
+        },
+        {
+          "id": "spring-ai-chat-memory-repository-in-memory",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-chat-memory",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.chat.memory.repository.in.memory.name",
+          "descriptionId": "dependency.spring.ai.chat.memory.repository.in.memory.description"
+        },
+        {
+          "id": "spring-ai-chat-memory-repository-jdbc",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-chat-memory-repository-jdbc",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.chat.memory.repository.jdbc.name",
+          "descriptionId": "dependency.spring.ai.chat.memory.repository.jdbc.description"
+        },
+        {
+          "id": "spring-ai-chat-memory-repository-cassandra",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-chat-memory-repository-cassandra",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.chat.memory.repository.cassandra.name",
+          "descriptionId": "dependency.spring.ai.chat.memory.repository.cassandra.description"
+        },
+        {
+          "id": "spring-ai-chat-memory-repository-mongodb",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-chat-memory-repository-mongodb",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.chat.memory.repository.mongodb.name",
+          "descriptionId": "dependency.spring.ai.chat.memory.repository.mongodb.description"
+        },
+        {
+          "id": "spring-ai-chat-memory-repository-neo4j",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-chat-memory-repository-neo4j",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.chat.memory.repository.neo4j.name",
+          "descriptionId": "dependency.spring.ai.chat.memory.repository.neo4j.description"
+        },
+        {
+          "id": "spring-ai-chat-memory-repository-redis",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-chat-memory-repository-redis",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.chat.memory.repository.redis.name",
+          "descriptionId": "dependency.spring.ai.chat.memory.repository.redis.description"
+        },
+        {
+          "id": "spring-ai-vectordb-oracle",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-oracle",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.oracle.name",
+          "descriptionId": "dependency.spring.ai.vectordb.oracle.description"
+        },
+        {
+          "id": "spring-ai-vectordb-pgvector",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-pgvector",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.pgvector.name",
+          "descriptionId": "dependency.spring.ai.vectordb.pgvector.description"
+        },
+        {
+          "id": "spring-ai-vectordb-pinecone",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-pinecone",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.pinecone.name",
+          "descriptionId": "dependency.spring.ai.vectordb.pinecone.description"
+        },
+        {
+          "id": "spring-ai-postgresml",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-postgresml-embedding",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.postgresml.name",
+          "descriptionId": "dependency.spring.ai.postgresml.description"
+        },
+        {
+          "id": "spring-ai-vectordb-redis",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-redis",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.redis.name",
+          "descriptionId": "dependency.spring.ai.vectordb.redis.description"
+        },
+        {
+          "id": "spring-ai-vectordb-s3",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-s3",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.s3.name",
+          "descriptionId": "dependency.spring.ai.vectordb.s3.description"
+        },
+        {
+          "id": "spring-ai-vectordb-mariadb",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-mariadb",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.mariadb.name",
+          "descriptionId": "dependency.spring.ai.vectordb.mariadb.description"
+        },
+        {
+          "id": "spring-ai-stabilityai",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-stability-ai",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.stabilityai.name",
+          "descriptionId": "dependency.spring.ai.stabilityai.description"
+        },
+        {
+          "id": "spring-ai-transformers",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-transformers",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.transformers.name",
+          "descriptionId": "dependency.spring.ai.transformers.description"
+        },
+        {
+          "id": "spring-ai-vertexai-embeddings",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-model-vertex-ai-embedding",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vertexai.embeddings.name",
+          "descriptionId": "dependency.spring.ai.vertexai.embeddings.description"
+        },
+        {
+          "id": "spring-ai-vectordb-qdrant",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-qdrant",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.qdrant.name",
+          "descriptionId": "dependency.spring.ai.vectordb.qdrant.description"
+        },
+        {
+          "id": "spring-ai-vectordb-typesense",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-typesense",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.typesense.name",
+          "descriptionId": "dependency.spring.ai.vectordb.typesense.description"
+        },
+        {
+          "id": "spring-ai-vectordb-weaviate",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-starter-vector-store-weaviate",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.vectordb.weaviate.name",
+          "descriptionId": "dependency.spring.ai.vectordb.weaviate.description"
+        },
+        {
+          "id": "spring-ai-markdown-document-reader",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-markdown-document-reader",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.markdown.document.reader.name",
+          "descriptionId": "dependency.spring.ai.markdown.document.reader.description"
+        },
+        {
+          "id": "spring-ai-tika-document-reader",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-tika-document-reader",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.tika.document.reader.name",
+          "descriptionId": "dependency.spring.ai.tika.document.reader.description"
+        },
+        {
+          "id": "spring-ai-pdf-document-reader",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-pdf-document-reader",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.pdf.document.reader.name",
+          "descriptionId": "dependency.spring.ai.pdf.document.reader.description"
+        },
+        {
+          "id": "spring-ai-jsoup-document-reader",
+          "compatibleBootVersions": [
+            "4.1.1",
+            "4.0.8"
+          ],
+          "groupId": "org.springframework.ai",
+          "artifactId": "spring-ai-jsoup-document-reader",
+          "compatibilityRange": "[4.0.0.RELEASE,4.3.0.M1)",
+          "scope": "compile",
+          "bom": "spring-ai",
+          "nameId": "dependency.spring.ai.jsoup.document.reader.name",
+          "descriptionId": "dependency.spring.ai.jsoup.document.reader.description"
+        },
+        {
+          "id": "timefold-solver",
+          "compatibleBootVersions": [
+            "4.0.8"
+          ],
+          "groupId": "ai.timefold.solver",
+          "artifactId": "timefold-solver-spring-boot-starter",
+          "compatibilityRange": "[4.0.0.RELEASE,4.1.0.M1)",
+          "scope": "compile",
+          "bom": "timefold-solver",
+          "nameId": "dependency.timefold.solver.name",
+          "descriptionId": "dependency.timefold.solver.description"
+        }
+      ]
+    }
+  ],
+  "env": {
+    "boms": {
+      "codecentric-spring-boot-admin": {
+        "groupId": "de.codecentric",
+        "artifactId": "spring-boot-admin-dependencies",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.1.1,4.1.1]",
+            "version": "4.1.2"
+          },
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "4.0.4"
+          }
+        ]
+      },
+      "spring-cloud": {
+        "groupId": "org.springframework.cloud",
+        "artifactId": "spring-cloud-dependencies",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.1.1,4.1.1]",
+            "version": "2025.1.3"
+          },
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "2025.1.3"
+          }
+        ]
+      },
+      "vaadin": {
+        "groupId": "com.vaadin",
+        "artifactId": "vaadin-bom",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.1.1,4.1.1]",
+            "version": "25.3.0"
+          }
+        ]
+      },
+      "spring-shell": {
+        "groupId": "org.springframework.shell",
+        "artifactId": "spring-shell-dependencies",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.1.1,4.1.1]",
+            "version": "4.0.2"
+          },
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "4.0.2"
+          }
+        ]
+      },
+      "spring-modulith": {
+        "groupId": "org.springframework.modulith",
+        "artifactId": "spring-modulith-bom",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.1.1,4.1.1]",
+            "version": "2.1.1"
+          },
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "2.0.8"
+          }
+        ]
+      },
+      "spring-ai": {
+        "groupId": "org.springframework.ai",
+        "artifactId": "spring-ai-bom",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.1.1,4.1.1]",
+            "version": "2.0.1"
+          },
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "2.0.1"
+          }
+        ]
+      },
+      "datasource-micrometer": {
+        "groupId": "net.ttddyy.observation",
+        "artifactId": "datasource-micrometer-bom",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.1.1,4.1.1]",
+            "version": "2.3.0"
+          },
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "2.3.0"
+          }
+        ]
+      },
+      "spring-cloud-services": {
+        "groupId": "io.pivotal.spring.cloud",
+        "artifactId": "spring-cloud-services-dependencies",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.1.1,4.1.1]",
+            "version": "4.4.1"
+          },
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "4.4.1"
+          }
+        ]
+      },
+      "solace-spring-boot": {
+        "groupId": "com.solace.spring.boot",
+        "artifactId": "solace-spring-boot-bom",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "3.0.0"
+          }
+        ]
+      },
+      "spring-cloud-azure": {
+        "groupId": "com.azure.spring",
+        "artifactId": "spring-cloud-azure-dependencies",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "7.3.0"
+          }
+        ]
+      },
+      "netflix-dgs": {
+        "groupId": "com.netflix.graphql.dgs",
+        "artifactId": "graphql-dgs-platform-dependencies",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "11.1.0"
+          }
+        ]
+      },
+      "timefold-solver": {
+        "groupId": "ai.timefold.solver",
+        "artifactId": "timefold-solver-bom",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "2.7.0"
+          }
+        ]
+      },
+      "spring-cloud-gcp": {
+        "groupId": "com.google.cloud",
+        "artifactId": "spring-cloud-gcp-dependencies",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "8.0.5"
+          }
+        ]
+      },
+      "spring-grpc": {
+        "groupId": "org.springframework.grpc",
+        "artifactId": "spring-grpc-dependencies",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "1.0.3"
+          }
+        ]
+      },
+      "tanzu-spring-sdk": {
+        "groupId": "com.vmware.tanzu.spring",
+        "artifactId": "tanzu-spring-sdk-dependencies",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "1.0.0"
+          }
+        ]
+      },
+      "sentry": {
+        "groupId": "io.sentry",
+        "artifactId": "sentry-bom",
+        "mappings": [
+          {
+            "compatibilityRange": "[4.0.8,4.0.8]",
+            "version": "8.27.0"
+          }
+        ]
+      }
+    },
+    "repositories": {
+      "shibboleth-releases": {
+        "name": "Shibboleth Releases Repository",
+        "url": "https://build.shibboleth.net/maven/releases",
+        "snapshotsEnabled": false
+      }
+    },
+    "kotlin": {
+      "defaultVersion": "2.3.21",
+      "mappings": [
+        {
+          "compatibilityRange": "[4.1.1,4.1.1]",
+          "version": "2.3.21"
+        },
+        {
+          "compatibilityRange": "[4.0.8,4.0.8]",
+          "version": "2.2.21"
+        }
+      ]
+    }
+  }
+}

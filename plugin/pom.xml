@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  - Copyright 2013-2026 consulo.io
+  -
+  - Licensed under the Apache License, Version 2.0 (the "License");
+  - you may not use this file except in compliance with the License.
+  - You may obtain a copy of the License at
+  -
+  - http://www.apache.org/licenses/LICENSE-2.0
+  -
+  - Unless required by applicable law or agreed to in writing, software
+  - distributed under the License is distributed on an "AS IS" BASIS,
+  - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  - See the License for the specific language governing permissions and
+  - limitations under the License.
+  -->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>consulo</groupId>
+        <artifactId>arch.bind.java</artifactId>
+        <version>3-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>consulo.plugin</groupId>
+    <artifactId>consulo.spring.initializr</artifactId>
+    <version>3-SNAPSHOT</version>
+    <packaging>consulo-plugin</packaging>
+
+    <repositories>
+        <repository>
+            <id>consulo</id>
+            <url>https://maven.consulo.dev/repository/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>interval:60</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>consulo.maven</groupId>
+                <artifactId>maven-consulo-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <dependencies>
+                        <dependency>consulo.java</dependency>
+                        <dependency>com.intellij.spring</dependency>
+                        <dependency>com.intellij.xml</dependency>
+                        <dependency>com.intellij.properties</dependency>
+                        <dependency>org.jetbrains.plugins.yaml</dependency>
+                        <dependency>consulo.json</dependency>
+                        <dependency>org.jetbrains.idea.maven</dependency>
+                        <dependency>org.intellij.groovy</dependency>
+                        <dependency>org.jetbrains.plugins.gradle</dependency>
+                    </dependencies>
+                    <packaging>
+                        <skip>${dev.mode}</skip>
+                        <version>${build.number}</version>
+                        <copies>
+                            <copy>
+                                <artifact>${project.groupId}:consulo.spring.initializr.runner:${project.version}</artifact>
+                                <path>runner.jar</path>
+                            </copy>
+                        </copies>
+                    </packaging>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>gen</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>generate-localize</goal>
+                            <goal>generate-icon</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>pack</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>workspace</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>consulo</groupId>
+            <artifactId>consulo-module-api</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>consulo</groupId>
+            <artifactId>consulo-module-creation-api</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>consulo</groupId>
+            <artifactId>consulo-ide-api</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>consulo</groupId>
+            <artifactId>consulo-ide-impl</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>consulo</groupId>
+            <artifactId>consulo-process-api</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>consulo.spring.initializr.api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- optional integrations, gated by META-INF/plugin-requires.xml inside their jars -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>consulo.spring.initializr-maven.impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>consulo.spring.initializr-gradle.impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <!-- only for the <copies> above: the runner runs in its own JVM, keep Spring off the plugin classpath -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>consulo.spring.initializr.runner</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>*</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+</project>

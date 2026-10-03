@@ -1,0 +1,50 @@
+name:
+    text: Spring Initializr
+label.group:
+    text: 'Group:'
+label.artifact:
+    text: 'Artifact:'
+label.package.name:
+    text: 'Package name:'
+label.spring.boot:
+    text: 'Spring Boot:'
+label.java:
+    text: 'Java:'
+label.language:
+    text: 'Language:'
+label.type:
+    text: 'Type:'
+label.packaging:
+    text: 'Packaging:'
+placeholder.artifact:
+    text: Same as the name
+placeholder.package.name:
+    text: Group and artifact
+metadata.load.failed:
+    text: Spring Initializr metadata could not be loaded, see the IDE log
+dependencies.title:
+    text: Dependencies
+dependencies.column.name:
+    text: Name
+dependencies.column.category:
+    text: Category
+dependencies.popup.title:
+    text: Add Dependencies
+dependencies.search.placeholder:
+    text: Search dependencies
+dependency.not.available:
+    text: not available for Spring Boot {0}
+progress.generating:
+    text: Generating Spring Boot project...
+generation.timeout:
+    text: Spring Initializr did not finish in {0} seconds
+generation.exit.code:
+    text: 'Spring Initializr exited with code {0}: {1}'
+notification.generation.failed.title:
+    text: Spring Boot project was not generated
+notification.generation.warnings.title:
+    text: Spring Boot project was generated with warnings
+notification.no.importer.title:
+    text: Spring Boot project was not imported
+notification.no.importer.content:
+    text: Install the {0} plugin to import the generated project

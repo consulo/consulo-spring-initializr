@@ -1,0 +1,62 @@
+{
+  "bootVersions": [
+    {"id": "3.5.0", "nameId": "boot.version.3.5.0.name", "default": true}
+  ],
+  "javaVersions": [
+    {"id": "21", "nameId": "java.version.21.name", "default": true},
+    {"id": "17", "nameId": "java.version.17.name", "default": false}
+  ],
+  "languages": [
+    {"id": "java", "nameId": "language.java.name", "default": true}
+  ],
+  "types": [
+    {
+      "id": "maven-project", "nameId": "type.maven.project.name", "default": true,
+      "action": "/starter.zip",
+      "tags": {"build": "maven", "format": "project"}
+    },
+    {
+      "id": "gradle-project", "nameId": "type.gradle.project.name", "default": false,
+      "action": "/starter.zip",
+      "tags": {"build": "gradle", "format": "project"}
+    }
+  ],
+  "packagings": [
+    {"id": "jar", "nameId": "packaging.jar.name", "default": true},
+    {"id": "war", "nameId": "packaging.war.name", "default": false}
+  ],
+  "dependencies": [
+    {
+      "nameId": "dependency.group.web.name",
+      "content": [
+        {
+          "id": "web",
+          "nameId": "dependency.web.name",
+          "descriptionId": "dependency.web.description",
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-web"
+        }
+      ]
+    },
+    {
+      "nameId": "dependency.group.sql.name",
+      "content": [
+        {
+          "id": "data-jpa",
+          "nameId": "dependency.data.jpa.name",
+          "descriptionId": "dependency.data.jpa.description",
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-data-jpa"
+        },
+        {
+          "id": "h2",
+          "nameId": "dependency.h2.name",
+          "descriptionId": "dependency.h2.description",
+          "groupId": "com.h2database",
+          "artifactId": "h2",
+          "scope": "runtime"
+        }
+      ]
+    }
+  ]
+}
