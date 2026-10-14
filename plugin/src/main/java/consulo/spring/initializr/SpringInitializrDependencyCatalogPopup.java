@@ -21,11 +21,11 @@ import consulo.spring.initializr.model.DependencyGroupItem;
 import consulo.spring.initializr.model.DependencyItem;
 import consulo.spring.initializr.model.MetadataResult;
 import consulo.ui.CheckBox;
-import consulo.ui.ComponentItemRender;
+import consulo.ui.ComponentItemRenderer;
 import consulo.ui.Length;
 import consulo.ui.Table;
 import consulo.ui.TableItemEditor;
-import consulo.ui.TableItemRender;
+import consulo.ui.TableItemRenderer;
 import consulo.ui.TextAttribute;
 import consulo.ui.TextBox;
 import consulo.ui.ValueComponent;
@@ -92,18 +92,18 @@ final class SpringInitializrDependencyCatalogPopup {
                     return dependency.isCompatibleWith(myBootVersion);
                 }
             })
-            .setRender(ComponentItemRender.reusable(
+            .setRenderer(ComponentItemRenderer.reusable(
                 () -> CheckBox.create(LocalizeValue.empty()),
                 (checkBox, item) -> checkBox.setValue(Boolean.TRUE.equals(item.getValue()))
             ));
 
-        TableItemRender<DependencyItem, DependencyItem> nameRender =
+        TableItemRenderer<DependencyItem, DependencyItem> nameRender =
             (presentation, item, dependency) -> SpringInitializrDependencyPresentation.renderName(presentation, dependency, myBootVersion, true);
-        table.addColumn(LocalizeValue.empty(), dependency -> dependency).setRender(nameRender);
+        table.addColumn(LocalizeValue.empty(), dependency -> dependency).setRenderer(nameRender);
 
-        TableItemRender<DependencyItem, DependencyItem> categoryRender = (presentation, item, dependency) ->
+        TableItemRenderer<DependencyItem, DependencyItem> categoryRender = (presentation, item, dependency) ->
             presentation.append(SpringInitializrDependencyPresentation.categoryName(myCategories, dependency), TextAttribute.GRAY);
-        table.addColumn(LocalizeValue.empty(), dependency -> dependency).setWidth(170).setRender(categoryRender);
+        table.addColumn(LocalizeValue.empty(), dependency -> dependency).setWidth(170).setRenderer(categoryRender);
 
         table.addDoubleClickListener(event -> {
             DependencyItem dependency = event.getValue();
