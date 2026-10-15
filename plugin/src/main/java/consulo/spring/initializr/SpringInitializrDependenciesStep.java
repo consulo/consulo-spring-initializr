@@ -24,7 +24,7 @@ import consulo.spring.initializr.model.MetadataResult;
 import consulo.ui.Component;
 import consulo.ui.Label;
 import consulo.ui.Table;
-import consulo.ui.TableItemRender;
+import consulo.ui.TableItemRenderer;
 import consulo.ui.TextAttribute;
 import consulo.ui.annotation.RequiredUIAccess;
 import consulo.ui.ex.action.ActionToolbarPosition;
@@ -53,8 +53,8 @@ public class SpringInitializrDependenciesStep implements WizardStep<SpringInitia
     private @Nullable MutableFlatDataModel<DependencyItem> mySelected;
     private @Nullable JBPopup myCatalogPopup;
 
-    @RequiredUIAccess
     @Override
+    @RequiredUIAccess
     public Component getComponent(SpringInitializrNewModuleWizardContext context, Disposable uiDisposable) {
         MetadataResult metadata = context.getMetadata();
         if (metadata == null) {
@@ -71,13 +71,13 @@ public class SpringInitializrDependenciesStep implements WizardStep<SpringInitia
 
         Table<DependencyItem> table = Table.create(selected);
 
-        TableItemRender<DependencyItem, DependencyItem> nameRender =
+        TableItemRenderer<DependencyItem, DependencyItem> nameRender =
             (presentation, item, dependency) -> SpringInitializrDependencyPresentation.renderName(presentation, dependency, bootVersion, false);
-        table.addColumn(SpringInitializrLocalize.dependenciesColumnName(), dependency -> dependency).setRender(nameRender);
+        table.addColumn(SpringInitializrLocalize.dependenciesColumnName(), dependency -> dependency).setRenderer(nameRender);
 
-        TableItemRender<DependencyItem, DependencyItem> categoryRender = (presentation, item, dependency) ->
+        TableItemRenderer<DependencyItem, DependencyItem> categoryRender = (presentation, item, dependency) ->
             presentation.append(SpringInitializrDependencyPresentation.categoryName(categories, dependency), TextAttribute.GRAY);
-        table.addColumn(SpringInitializrLocalize.dependenciesColumnCategory(), dependency -> dependency).setWidth(220).setRender(categoryRender);
+        table.addColumn(SpringInitializrLocalize.dependenciesColumnCategory(), dependency -> dependency).setWidth(220).setRenderer(categoryRender);
 
         Component decorated = ToolbarDecoratorBuilderFactory.getInstance()
             .create(table)
